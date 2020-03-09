@@ -1,0 +1,56 @@
+<!--
+  Generated template for the EditarinfoautoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>editarinfoauto</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content>
+  <div>
+    <img src="../../assets/imgs/logo2.png" alt="logo2" class="logo2">
+  </div>
+  <div class="content_info_personal">
+    <div padding>
+      <h3 class="bold title1">Edita tu información personal</h3>
+    </div>
+    <form action="" [formGroup]="formgroup">
+      <div class="content_inputs">
+        <div class="form__group field">
+          <input type="text" class="form__field" formControlName="name" placeholder="name" name="name" id='name' required [(ngModel)]="nombreVal"/>
+          <label for="name" class="form__label">Nombre</label>
+        </div>
+        <div class="form__group field">
+          <input type="text" class="form__field" placeholder="Apellidos" formControlName="apellidos" name="apellidos" id='apellidos' required [(ngModel)]="apellidosVal"/>
+          <label for="apellidos" class="form__label">Apellidos</label>
+        </div>
+        <div class="form__group field">
+          <input type="input" class="form__field" placeholder="Sexo" formControlName="sexo" name="sexo" id='sexo' required [(ngModel)]="sexoVal"/>
+          <label for="sexo" class="form__label">Sexo</label>
+        </div>
+        <div class="form__group field">
+          <input type="date" class="form__field" placeholder="Fecha de Nacimiento" formControlName="fechaNacimiento" name="fechaNacimiento" id='fechaNacmiento' required [(ngModel)]="fechaNacimientoVal"/>
+          <label for="fechaNacmiento" class="form__label">Fecha de Nacimiento</label>
+        </div>
+        <div class="form__group field">
+          <input type="email" class="form__field" placeholder="Correo Electronico" formControlName="email" name="correoElectronico" id='correoElectronico' required  [(ngModel)]="correoElectronico"/>
+          <label for="correoElectronico" class="form__label">Correo Electronico</label>
+        </div>
+        <div class="form__group field">
+          <input type="tel" class="form__field" placeholder="Numeros de Telefono" formControlName="numeroTelefono" name="numeroTelefono" id='numeroTelefono' required [(ngModel)]="numerosTelefonoVal"/>
+          <label for="numeroTelefono" class="form__label">Numeros de Telefono</label>
+        </div>
+      </div>
+      <div padding>
+        <h3 class="title5 bold">Contacto de Emergencia</h3>
+      </div>
+      <div class="content_btn1">
+        <button ion-button color="dark" [disabled]="formgroup.invalid">Editar</button>
+      </div>
+    </form>
+  </div>
+</ion-content>

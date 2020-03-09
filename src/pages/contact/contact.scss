@@ -1,0 +1,14 @@
+page-contact {
+    .logo2{margin: 15px auto 0;max-width: 100px;display: block;}
+    .titulo1{font-size: 12px;}
+    .content_contacto{margin-top: 60px;position: relative;}
+    // .content_contacto:after{content: " ";background: url(../../assets/imgs/flecha.png);width: 15px;height: 15px;background-size: contain;background-repeat: no-repeat;right: 20px;background-position: 0px 0px;position: absolute;display: inline-block;top: calc(50% - 11px);}
+    .content_contacto img{max-width: 20px;}
+    .content_contacto img[alt="facebook_contacto"]{max-height: 27px;}
+    // .content_contacto{border-bottom: 1px solid #dfdfdf;padding: 0 20px 20px;}
+    .texto_content{margin-left: 10px;}
+    .icono, .texto_content{display: inline-block;}
+    .content_contacto .item-inner{padding: 20px 0;}
+    .content_contacto button{padding-left: 0 !important;}
+    .item-block:first-child{border-top: 0 !important;}
+}

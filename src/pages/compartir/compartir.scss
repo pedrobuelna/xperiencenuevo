@@ -1,0 +1,81 @@
+page-compartir {
+    .logo2{margin: 15px auto 0;max-width: 100px;display: block;}
+    .titulo1{font-size: 12px;}
+    li{list-style: none; display: inline;font-size: 12px;}
+    .menu_carrusel ul{margin: 40px 0;padding: 0;text-align: center;}
+    .selected{font-size: 14px;padding: 0 13px;}
+    .content_recamara{max-width: 85%;margin: 20px auto;}
+    .content_recamara img[alt="playas"]{border-radius: 25px;}
+    .content_recamara span{color: #575756;}
+    .content_iconos{margin-top: 10px;margin-bottom: 20px;}
+    .content_iconos span{position: relative;bottom: 5px;margin-left: 5px;font-size: 9px;}
+    .icono{display: inline-block;}
+    img[alt="kilometros"]{max-width: 16px;}
+    .parrafo1{text-align: justify;}
+    .title1{margin-top: 40px !important;}
+    .content_input{position: relative;}
+    $primary: #11998e;
+    $secondary: #38ef7d;
+    $white: #fff;
+    $gray: #9b9b9b;
+    .form__group {
+    position: relative;
+    padding: 15px 0 20px;
+    margin-top: 10px;
+    }
+
+    .form__field {
+        font-family: inherit;
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #d1d1d1;
+        outline: 0;
+        padding-left: 16px !important;
+        font-size: 1.3rem;
+        padding: 7px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+
+        &::placeholder {
+            color: transparent;
+        }
+
+        &:placeholder-shown ~ .form__label {
+            font-size: 1.3rem;
+            cursor: text;
+            top: 0px;
+        }
+    }
+
+    .form__label {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1.3rem;font-weight:700; 
+    // color: $gray;
+    }
+
+    .form__field:focus {
+    ~ .form__label {
+        position: absolute;
+        top: 0px;
+        display: block;
+        transition: 0.2s;
+        font-size: 1.3rem;
+        
+    }
+    // padding-bottom: 6px;  
+    
+    // border-width: 3px;
+    // border-image: linear-gradient(to right, $primary,$secondary);
+    // border-image-slice: 1;
+    }
+    /* reset input */
+    .form__field{
+    &:required,&:invalid { box-shadow:none; }
+    }
+    .input{width: 100%;border-radius: 0;height: 40px;border: 0;}
+    .button{border-radius: 10px;font-weight:bold;height: 50px;font-size: 2rem;min-width: 223px;margin-bottom: 50px;}
+}

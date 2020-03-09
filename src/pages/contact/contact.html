@@ -1,0 +1,93 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>
+      Contact
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+
+  <ion-content  ng-controller="MyCtrl">
+    <div class="fixed_menu">
+      <img src="../../assets/imgs/logo2.png" alt="logo2" class="logo2">
+    </div>
+    <div class="content_contacto">
+      
+      <ion-list>
+        <button ion-item>
+          <div class="texto_content">
+            <div class="icono">
+              <img src="../../assets/imgs/contacto_menu.png" alt="contacto">
+            </div>
+            <div class="texto_content">
+              <div class="texto1 bold">Chat</div>
+              <div class="txt4">Asistencia por chat disponible 24 hrs /7 días</div>
+            </div>
+          </div>
+        </button>
+        <button ion-item (click)="callNumber(018003458877)">
+          <div class="texto_content">
+            <div class="icono">
+              <img src="../../assets/imgs/telefono_contacto.png" alt="telefono_contacto">
+            </div>
+            <div class="texto_content" >
+              <div class="texto1 bold">Llamar 01 800 345 8877 /</div>
+              <div class="txt4">Asistencia por chat disponible 24 hrs /7 días</div>
+            </div>
+          </div>
+        </button>
+        <button ion-item (click)="callNumber(+52166743467654)">
+          <div class="texto_content" >
+            <div class="icono">
+              <img src="../../assets/imgs/telefono_contacto.png" alt="telefono_contacto">
+            </div>
+            <div class="texto_content">
+              <div class="texto1 bold">
+                Llamar 52 667 434 67654
+              </div>
+              <div class="txt4">Asistencia por chat disponible 24 hrs /7 días</div>
+            </div>
+          </div>
+        </button> 
+        <button ion-item (click)="abrirFacebook()">
+          <div class="texto_content">
+            <div class="icono">
+              <img src="../../assets/imgs/facebook_contacto.png" alt="facebook_contacto">
+            </div>
+            <div class="texto_content">
+              <div class="texto1 bold">Facebook</div>
+              <div class="txt4">Xperiencehotel</div>
+            </div>
+          </div>
+        </button> 
+        <button ion-item (click)="abrirInstagram()">
+          <div class="texto_content">
+            <div class="icono">
+              <img src="../../assets/imgs/instagram_contacto.png" alt="instagram_contacto">
+            </div>
+            <div class="texto_content">
+              <div class="texto1 bold">Instagram</div>
+              <div class="txt4">Xperiencehotel</div>
+            </div>
+          </div>
+        </button>
+        <button ion-item (click)="abrirTwitter()">
+          <div class="texto_content">
+            <div class="icono">
+              <img src="../../assets/imgs/twitter_contacto.png" alt="twitter_contacto">
+            </div> 
+            <div class="texto_content">
+              <div class="texto1 bold">Twitter</div>
+              <div class="txt4">@Xperiencehotel</div>
+            </div>
+          </div>
+        </button> 
+      </ion-list>
+      
+    </div>
+     <!-- <ion-list>
+      <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
+        {{ item }}
+      </button>  
+    </ion-list>  -->
+

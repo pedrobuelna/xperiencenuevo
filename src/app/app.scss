@@ -1,0 +1,57 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+@font-face {
+    font-family: verdana2;
+    src: url(../assets/fonts/Verdana.ttf);
+}
+@font-face {
+    font-family: verdanaBold;
+    src: url(../assets/fonts/Verdana_Bold.ttf);
+}
+@font-face {
+    font-family: verdanaItalica;
+    src: url(../assets/fonts/Verdana_Italic.ttf);
+}
+.bold{font-family: verdanaBold !important;}
+.verdana2{font-family: verdana2 !important;}
+.italica{font-family: verdanaItalica !important;}
+.center{text-align: center;}
+.fz18px{font-size: 12px;}
+.fz36px{font-size: 21px;}
+.txt2{font-size: 1rem;}
+.txt3{font-size: 1.2rem;}
+.txt4{font-size: 1.3rem;}
+.uppercase{text-transform: uppercase;}
+.content_btn1{text-align: center;}
+.title5{font-size: 1.4rem;}
+.colorgray1{color: #878787;}
+.tabbar{background-color: #fff !important;border-top: none !important;height: 60px;}
+// #tab-t0-0 > ion-icon.tab-button-icon:before{background-image: url("../assets/imgs/perfil_menu.png") !important;background-size: 100%;background-repeat: no-repeat;width: 24px;height: 100%;content: "" !important;}
+.tab-button-icon:before,.tab-button[aria-selected=true],.tab-button-text{color: black !important;}
+.tab-button-text{font-size: .7rem;;}
+#tab-t0-1 > ion-icon.tab-button-icon:before{background-image: url("../assets/imgs/contacto_menu.png") !important;background-size: 100%;background-repeat: no-repeat;width: 24px;height: 20px;content: "" !important;}
+#tab-t0-2 > ion-icon{width: 80px;height: 100px;margin-top: 0;z-index: 10;overflow: visible;position: relative;}
+#tab-t0-2{width: 310px;height: 150px;}
+#tab-t0-2 > span{position: absolute;top: 79px;}
+#tab-t0-2 > .tabs-ios .tab-button-text{position: absolute;margin-top: 0;top: 86px !important;}
+
+
+#tab-t0-2 > ion-icon.tab-button-icon:before{background-image: url(../assets/imgs/icono_menu.png) !important;background-size: 100%;background-repeat: no-repeat;width: 53px;height: 59px;z-index: 10000;position: relative;overflow: visible;background-position: center;content: "" !important;bottom: 0px;}
+.tabs-ios #tab-t0-2 > span{position: absolute;top: 86px;}
+#tab-t0-3 > ion-icon.tab-button-icon:before{background-image: url("../assets/imgs/llave_menu.png") !important;background-size: 100%;background-repeat: no-repeat;width: 24px;height: 20px;content: "" !important;}
+#tab-t0-4 > ion-icon.tab-button-icon:before{background-image: url("../assets/imgs/perfil_menu.png") !important;background-size: 100%;background-repeat: no-repeat;width: 24px;height: 20px;content: "" !important;}
+
