@@ -15,7 +15,8 @@ import { ActividadesPage } from '../pages/actividades/actividades';
 import { LlavesPage } from '../pages/llaves/llaves';
 import { ReservaPage } from '../pages/reserva/reserva';
 import { PHabitacionPage } from '../pages/p-habitacion/p-habitacion';
-import { HabitacionPage } from '../pages/habitacion/habitacion';
+import { LoginPage } from '../pages/login/login';
+
 @NgModule({
   declarations: [
     MyApp,
@@ -28,7 +29,7 @@ import { HabitacionPage } from '../pages/habitacion/habitacion';
     ActividadesPage,
     ReservaPage,
     PHabitacionPage,
-    HabitacionPage,
+    LoginPage,
     LlavesPage
   ],
   imports: [
@@ -47,7 +48,7 @@ import { HabitacionPage } from '../pages/habitacion/habitacion';
     ActividadesPage,
     ReservaPage,
     PHabitacionPage,
-    HabitacionPage,
+    LoginPage,
     LlavesPage
   ],
   providers: [

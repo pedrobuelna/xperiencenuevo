@@ -7,6 +7,9 @@ import { NavController } from 'ionic-angular';
 export class ContactPage {
   constructor(public navCtrl: NavController) {
   }
+  ionViewDidLoad() {
+
+  }
   // items = [
   //   'Pokémon Yellow',
   //   'Super Metroid',
@@ -45,4 +48,5 @@ export class ContactPage {
   callNumber2(phoneNumber){
     window.open('tel:' + phoneNumber, '_system');
   }
+
 }

@@ -1,11 +1,12 @@
-<ion-content padding (ionScroll)="scrolling($event)" (ionScrollEnd)="scrollComplete($event)">
+<ion-content padding (ionScroll)="scrolling($event)" (ionScrollEnd)="scrollComplete($event)" id="contentID">
   <div #fixed_menu class="fixed_menu" ion-fixed>
     <img src="../../assets/imgs/logo1.png" alt="logo1" class="logo2">
     <nav class="menu_carrusel bold" padding>
       <ul>
-        <li class="selected">Deluxe Suite</li>
-        <li>Timeless Penthouse</li>
-        <li>Master Suite</li>
+        <li class="habitacionLess habitacion1" (click)="goTo('habitacion1')">Deluxe Suite</li>
+        <li class="habitacionLess habitacion2" (click)="goTo('habitacion2')">Timeless Penthouse</li>
+        <li class="habitacionLess habitacion3" (click)="goTo('habitacion3')">Master Suite</li>
+        <li class="habitacionLess habitacion4" (click)="goTo('habitacion4')">Deluxe Suite 2</li>
       </ul>
     </nav>
   </div>
@@ -59,8 +60,8 @@
       <div class="nextCarrucel" (click)="nextSlide()"><img src="../../assets/imgs/flechablanca.png" alt="flecha"></div>
     </div>
 
-    <div class="content_recamara">
-      <h3 class="bold titulo1" (click)="onclickHabitacionIn()">Deluxe Suite</h3>
+    <div class="content_recamara" id="habitacion1" #habitacion1>
+      <h3 class="bold titulo1">Deluxe Suite</h3>
       <span class="italica">$1,199.00 por noche</span>
       <div class="content_iconos">
         <div class="icono">
@@ -199,7 +200,7 @@
         </ul>
       </div>
     </div>
-    <div class="content_recamara">
+    <div class="content_recamara" id="habitacion2">
       <h3 class="bold titulo1">Timeless Penthouse</h3>
       <span class="italica">$2,199.00 por noche</span>
       <div class="content_iconos">
@@ -339,7 +340,7 @@
         </ul>
       </div>
     </div>
-    <div class="content_recamara">
+    <div class="content_recamara" id="habitacion3">
       <h3 class="bold titulo1">Master Suite</h3>
       <span class="italica">$599.00 por noche</span>
       <div class="content_iconos">
@@ -348,6 +349,146 @@
         </div>
         <div class="icono">
           <img src="../../assets/imgs/metros.png" alt="metros"><span>50 m2</span>
+        </div>
+      </div>
+      <div></div>
+      <p class="parrafo1 verdana2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, velit vitae rutrum rhoncus, arcu lectus tincidunt quam, nec faucibus orci tellus id mi. Duis pharetra metus sed malesuada tristique. Pellentesque orci elit, venenatis id rhoncus id, consequat ac urna.</p>
+      <div class="amenidadesHabitacion">
+        <h3 class="bold titulo1">Amenidades</h3>
+        <ul class="listaAmenidadesLeft">
+          <li>
+            <img src="../../assets/imgs/cama.png" alt="cama">
+            <div>
+              <label class="title">1 Cama Queen Size</label>
+              <label class="subTitle"></label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/ap.png" alt="cama">
+            <div>
+              <label class="title">Super Wifi Gratis</label>
+              <label class="subTitle"></label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/bata.png" alt="cama">
+            <div>
+              <label class="title">Luxury Bathroom</label>
+              <label class="subTitle">Batas de baño de maximo confort</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/pool.png" alt="cama">
+            <div>
+              <label class="title">Royal Pool</label>
+              <label class="subTitle">Lujosa Piscina Privada</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/elevador.png" alt="cama">
+            <div>
+              <label class="title">Elevador</label>
+              <label class="subTitle">Elevador de alta gama</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/flor.png" alt="cama">
+            <div>
+              <label class="title">SkyBar</label>
+              <label class="subTitle">Skybar 4to piso del hotel</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/llavebt.png" alt="cama">
+            <div>
+              <label class="title">Llave Digital (XP App)</label>
+              <label class="subTitle"></label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/tv.png" alt="cama">
+            <div>
+              <label class="title">Pantallas SmartTV</label>
+              <label class="subTitle">PantallaDigital 50"</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/bambo.png" alt="cama">
+            <div>
+              <label class="title">Bamboo Bed Blankets</label>
+              <label class="subTitle">Blancos con fibras naturales de Bambú</label>
+            </div>
+          </li>
+        </ul>
+        <ul class="listaAmenidadesLeft">
+          <li>
+            <img src="../../assets/imgs/xp.png" alt="cama">
+            <div>
+              <label class="title">XP Royal Mattress</label>
+              <label class="subTitle"></label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/avion.png" alt="cama">
+            <div>
+              <label class="title">Traslado</label>
+              <label class="subTitle">Aeropuerto-Hotel Xperience</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/lavadora.png" alt="cama">
+            <div>
+              <label class="title">Lavadora XP</label>
+              <label class="subTitle">Servicio de Alta Lavanderia</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/caja.png" alt="cama">
+            <div>
+              <label class="title">Security Box</label>
+              <label class="subTitle">Caja fuerte con llave digital</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/aire.png" alt="cama">
+            <div>
+              <label class="title">Sistema de Aire</label>
+              <label class="subTitle">Aire Acondicionado</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/comida.png" alt="cama">
+            <div>
+              <label class="title">Food App</label>
+              <label class="subTitle">Room service en XP App</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/cel.png" alt="cama">
+            <div>
+              <label class="title">Registro Digital</label>
+              <label class="subTitle">Check in - Check out</label>
+            </div>
+          </li>
+          <li>
+            <img src="../../assets/imgs/timbre.png" alt="cama">
+            <div>
+              <label class="title">Room service</label>
+              <label class="subTitle">Restaurant y Cafeteria</label>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="content_recamara" id="habitacion4">
+      <h3 class="bold titulo1">Deluxe Suite 2</h3>
+      <span class="italica">$2,199.00 por noche</span>
+      <div class="content_iconos">
+        <div class="icono">
+          <img src="../../assets/imgs/cama.png" alt="cama"><span>1</span>
+        </div>
+        <div class="icono">
+          <img src="../../assets/imgs/metros.png" alt="metros"><span>58 m2</span>
         </div>
       </div>
       <div></div>

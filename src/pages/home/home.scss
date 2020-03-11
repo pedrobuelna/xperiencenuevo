@@ -1,9 +1,10 @@
+.none{display: none !important;}
 page-home {
     .contenedor_video{position: absolute;z-index: 0;top: 0;left: 0;width: 100%;height: 100vh;}
     .overlay_video{width: 100%;height: 100%;position: absolute;top: 0;left: 0;z-index: 1;background-color: rgba( #000000, $alpha: 0.3);}
     // .tabbar{display: none !important;}
     .fondo{background-color: black !important;}
-    .imgLogo{margin: 7% auto 0;display: block;width: 22%;max-width: 252px;position: relative;}
+    .imgLogo{margin: 7% auto 0;display: block;width: 100px;max-width: 252px;position: relative;}
     .button{border-radius: 16px;font-weight: bold;text-transform: uppercase;height: 70px;font-size: 2.4rem;}
     .content_enjoy{margin-top: 60%;position: relative;}
     .content_buttons2{margin-top: 40%;position: relative;}
