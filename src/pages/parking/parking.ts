@@ -21,6 +21,7 @@ export class ParkingPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ParkingPage');
   }
+  
   onclickPedirAuto() {
     const confirm = this.alertCtrl.create({
       title: 'PEDIR AUTO',

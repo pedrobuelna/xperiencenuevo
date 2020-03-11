@@ -13,7 +13,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ActividadesPage } from '../pages/actividades/actividades';
 import { LlavesPage } from '../pages/llaves/llaves';
-
+import { ReservaPage } from '../pages/reserva/reserva';
+import { PHabitacionPage } from '../pages/p-habitacion/p-habitacion';
+import { HabitacionPage } from '../pages/habitacion/habitacion';
 @NgModule({
   declarations: [
     MyApp,
@@ -24,6 +26,9 @@ import { LlavesPage } from '../pages/llaves/llaves';
     ContactoPage,
     EditarinfoautoPage,
     ActividadesPage,
+    ReservaPage,
+    PHabitacionPage,
+    HabitacionPage,
     LlavesPage
   ],
   imports: [
@@ -40,6 +45,9 @@ import { LlavesPage } from '../pages/llaves/llaves';
     ContactoPage,
     EditarinfoautoPage,
     ActividadesPage,
+    ReservaPage,
+    PHabitacionPage,
+    HabitacionPage,
     LlavesPage
   ],
   providers: [

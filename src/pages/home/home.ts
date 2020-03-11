@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 import { HabitacionPage } from '../habitacion/habitacion';
 import { ReservaPage } from '../reserva/reserva';
+import { TabsPage } from '../tabs/tabs';
 
 @Component({
   selector: 'page-home',
@@ -9,13 +10,15 @@ import { ReservaPage } from '../reserva/reserva';
 })
 export class HomePage {
 
+
   constructor(private platform: Platform,
     public navCtrl: NavController, public navParams: NavParams) {
-    
+
   }
+  
   onclickPageReserva(){
     //this.navCtrl.setRoot("ReservaPage",null,{direction:"forward",animate:true})
-    this.navCtrl.push("ReservaPage")
+    this.navCtrl.push(TabsPage)
   }
   onclickMenuPrincipal(){
     //this.navCtrl.setRoot("MenuprincipalPage",null,{direction:"forward",animate:true})

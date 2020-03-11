@@ -55,8 +55,8 @@
           </div>
         </ion-slide>
       </ion-slides>
-      <div class="beforeCarrucel" (click)="beforeSlide()"><img src="../../assets/imgs/flechaB.png" alt="cama"></div>
-      <div class="nextCarrucel" (click)="nextSlide()"><img src="../../assets/imgs/flechaB.png" alt="cama"></div>
+      <div class="beforeCarrucel" (click)="beforeSlide()"><img src="../../assets/imgs/flechablanca.png" alt="flecha"></div>
+      <div class="nextCarrucel" (click)="nextSlide()"><img src="../../assets/imgs/flechablanca.png" alt="flecha"></div>
     </div>
 
     <div class="content_recamara">
@@ -482,6 +482,6 @@
   </ion-list>
   <div #verificar class="verificar" padding ion-fixed>
     <label class="precio">$2,999.00 /</label>
-    <button ion-button color="dark">VERIFICAR</button>
+    <button ion-button color="dark" (click)="onclickCalendario()">VERIFICAR DISPONIBILIDAD</button>
   </div>
 </ion-content>

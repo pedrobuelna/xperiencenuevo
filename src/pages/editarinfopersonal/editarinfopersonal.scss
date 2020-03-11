@@ -1,4 +1,4 @@
-page-compartir {
+page-editarinfopersonal {
     .logo2{margin: 15px auto 0;max-width: 100px;display: block;}
     .titulo1{font-size: 12px;}
     li{list-style: none; display: inline;font-size: 12px;}
@@ -14,7 +14,7 @@ page-compartir {
     .parrafo1{text-align: justify;}
     .title1{margin-top: 40px !important;}
     .content_input{position: relative;}
-    .estrellas{margin-left: 16px;width: 100px;margin-top: 5px;}
+    #placas{text-transform: uppercase;}
     $primary: #11998e;
     $secondary: #38ef7d;
     $white: #fff;
@@ -33,10 +33,10 @@ page-compartir {
         outline: 0;
         padding-left: 16px !important;
         font-size: 1.3rem;
-        padding: 2px 0 7px;
+        padding: 7px 0;
         background: transparent;
         transition: border-color 0.2s;
-
+        -webkit-appearance: none;
         &::placeholder {
             color: transparent;
         }
@@ -75,9 +75,8 @@ page-compartir {
     }
     /* reset input */
     .form__field{
-    &:required,&:invalid {box-shadow:none;padding-bottom: 20px;}
+    &:required,&:invalid { box-shadow:none; }
     }
-    #estadia{padding-bottom: 0;}
     .input{width: 100%;border-radius: 0;height: 40px;border: 0;}
-    .button{border-radius: 10px;font-weight:bold;height: 50px;font-size: 2rem;min-width: 223px;margin-bottom: 50px;}
+    .button{border-radius: 10px;font-weight:bold;height: 50px;font-size: 2rem;min-width: 223px;margin-bottom: 130px;margin-top: 40px;}
 }

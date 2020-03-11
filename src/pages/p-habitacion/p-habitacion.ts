@@ -1,6 +1,6 @@
 import { Component, ViewChild, Inject } from '@angular/core';
-import { IonicPage, NavController, NavParams, Slides, Content } from 'ionic-angular';
-
+import { IonicPage, NavController, NavParams, Slides, Content ,ModalController} from 'ionic-angular';
+import { ActividadesPage } from '../../pages/actividades/actividades';
 /**
  * Generated class for the PHabitacionPage page.
  *
@@ -19,11 +19,14 @@ export class PHabitacionPage {
   @ViewChild('fixed_menu') fixed_menu: any;
   @ViewChild('verificar') verificar: any;
   
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {}
-
+  onclickCalendario(){
+    let contactModal = this.modalCtrl.create("CalendarioPage");
+    contactModal.present();
+  }
   nextSlide () {
     this.slides.slideNext();
   }

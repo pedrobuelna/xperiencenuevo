@@ -21,21 +21,24 @@ export class LlavesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LlavesPage');
   }
+  onclickAdicional(){
+
+  }
   onclickAbrir() {
     const confirm = this.alertCtrl.create({
-      title: 'Use this lightsaber?',
-      message: 'Do you agree to use this lightsaber to do good across the intergalactic galaxy?',
+      title: 'Abrir Habitacion',
+      message: 'Seguro que deseas abrir la habitacion',
       buttons: [
         {
-          text: 'Disagree',
+          text: 'Cancelar',
           handler: () => {
-            console.log('Disagree clicked');
+            console.log('Cancelado click');
           }
         },
         {
-          text: 'Agree',
+          text: 'Aceptar',
           handler: () => {
-            console.log('Agree clicked');
+            console.log('Aceptado click');
           }
         }
       ]
