@@ -13,13 +13,11 @@ import { HabitacionPage } from '../habitacion/habitacion';
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
-
   tab1Root = HabitacionPage;
   tab2Root = ActividadesPage;
   tab3Root = ContactPage;
   tab4Root = LlavesPage;
   tab5Root = EditarinfoautoPage;
-
   constructor() {
 
   }
