@@ -15,7 +15,7 @@ import { ActividadesPage } from '../pages/actividades/actividades';
 import { LlavesPage } from '../pages/llaves/llaves';
 import { ReservaPage } from '../pages/reserva/reserva';
 import { PHabitacionPage } from '../pages/p-habitacion/p-habitacion';
-import { LoginPage } from '../pages/login/login';
+//import { LoginPage } from '../pages/login/login';
 
 @NgModule({
   declarations: [
@@ -24,13 +24,13 @@ import { LoginPage } from '../pages/login/login';
     ContactPage,
     HomePage,
     TabsPage,
-    ContactoPage,
-    EditarinfoautoPage,
-    ActividadesPage,
+    //ContactoPage,
+    //EditarinfoautoPage,
+//    ActividadesPage,
     ReservaPage,
-    PHabitacionPage,
-    LoginPage,
-    LlavesPage
+    //PHabitacionPage,
+    //LoginPage,
+    //LlavesPage
   ],
   imports: [
     BrowserModule,
@@ -43,13 +43,13 @@ import { LoginPage } from '../pages/login/login';
     ContactPage,
     HomePage,
     TabsPage,
-    ContactoPage,
-    EditarinfoautoPage,
-    ActividadesPage,
+    //ContactoPage,
+    //EditarinfoautoPage,
+    //ActividadesPage,
     ReservaPage,
-    PHabitacionPage,
-    LoginPage,
-    LlavesPage
+    //PHabitacionPage,
+    //LoginPage,
+    //LlavesPage
   ],
   providers: [
     StatusBar,

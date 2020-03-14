@@ -31,5 +31,7 @@ export class LoginPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
   }
-
+  onclickMenu(){
+    this.navCtrl.push("MenuprincipalPage")
+  }
 }

@@ -23,12 +23,30 @@ export class MenuprincipalPage {
     console.log('ionViewDidLoad MenuprincipalPage');
   }
   onclickHabitacion(){
-    this.navCtrl.setRoot("HabitacionPage",null,{direction:"forward",animate:true})
+    this.navCtrl.push("HabitacionPage")
     //this.navCtrl.push("SigninPage") 
   }
   onclickResaturant(){
-    this.navCtrl.setRoot("MenuprincipalPage",null,{direction:"forward",animate:true})
+    this.navCtrl.push("MenuprincipalPage")
 //    this.navCtrl.push("RestaurantPage")
+  }
+  onclickMenu(){
+    this.navCtrl.push("MenuPage")
+  }
+  onclickActividades(){
+    this.navCtrl.push("ActividadesPage")
+  }
+  onclickContact(){
+    this.navCtrl.push("ContactoPage")
+  }
+  onclickLlaves(){
+    this.navCtrl.push("LlavesPage")
+  }
+  onclickPerfil(){
+    this.navCtrl.push("EditarinfoautoPage")
+  }
+  onclickLogin(){
+    this.navCtrl.push("LoginPage")
   }
 
 }

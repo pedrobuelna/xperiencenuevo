@@ -50,23 +50,21 @@
     </div>
   </div>
 </ion-content> -->
-<ion-content padding>
-  <div ion-fixed class="test_class">
+<ion-content padding (ionScroll)="scrolling($event)">
+  <div #fixed_menu class="fixed_menu" ion-fixed>
     <img src="../../assets/imgs/logo2.png" alt="logo2" class="logo2">
-    <nav class="menu_carrusel bold">
+    <nav class="menu_carrusel bold" padding>
       <ul>
-        <li class="selected">Playas</li>
-        <li>A. Deportivas</li>
-        <li>A. Culturales</li>
-        <li>A. Diversión</li>
+        <li class="habitacionLess habitacion1" (click)="goTo('habitacion1')">Playas</li>
+        <li class="habitacionLess habitacion2" (click)="goTo('habitacion2')">A. Deportivas</li>
+        <li class="habitacionLess habitacion3" (click)="goTo('habitacion3')">A. Culturales</li>
+        <li class="habitacionLess habitacion4" (click)="goTo('habitacion4')">A. Diversión</li>
       </ul>
     </nav>
   </div>
-  <div class="fixed_menu">
-    
-  </div>
   
-  <div class="content_recamara">
+  
+  <div class="content_recamara" id="habitacion1" #habitacion1>
     <h3 class="bold titulo1">Malecon</h3>
     <span class="italica">Mazatlán, Sinaloa.</span>
     <div class="content_iconos">
@@ -78,7 +76,7 @@
     <img src="../../assets/imgs/playas.png" alt="playas">
     <p class="parrafo1 verdana2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, velit vitae rutrum rhoncus, arcu lectus tincidunt quam, nec faucibus orci tellus id mi. Duis pharetra metus sed malesuada tristique. Pellentesque orci elit, venenatis id rhoncus id, consequat ac urna.</p>
   </div>
-  <div class="content_recamara">
+  <div class="content_recamara" id="habitacion2" #habitacion2>
     <h3 class="bold titulo1">Isla de los venados</h3>
     <span class="italica">Mazatlán, Sinaloa.</span>
     <div class="content_iconos">
@@ -89,6 +87,51 @@
     <div></div>
     <img src="../../assets/imgs/playas.png" alt="playas">
     <p class="parrafo1 verdana2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, velit vitae rutrum rhoncus, arcu lectus tincidunt quam, nec faucibus orci tellus id mi. Duis pharetra metus sed malesuada tristique. Pellentesque orci elit, venenatis id rhoncus id, consequat ac urna.</p>
+  </div>
+  <div class="content_recamara" id="habitacion3" #habitacion3>
+    <h3 class="bold titulo1">Isla de los venados</h3>
+    <span class="italica">Mazatlán, Sinaloa.</span>
+    <div class="content_iconos">
+      <div class="icono">
+        <img src="../../assets/imgs/kilometros.png" alt="kilometros"><span>15 km de Xperience Hotel</span>
+      </div>
+    </div>
+    <div></div>
+    <img src="../../assets/imgs/playas.png" alt="playas">
+    <p class="parrafo1 verdana2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, velit vitae rutrum rhoncus, arcu lectus tincidunt quam, nec faucibus orci tellus id mi. Duis pharetra metus sed malesuada tristique. Pellentesque orci elit, venenatis id rhoncus id, consequat ac urna.</p>
+  </div>
+  <div class="content_recamara" id="habitacion4" #habitacion4>
+    <h3 class="bold titulo1">Isla de los venados</h3>
+    <span class="italica">Mazatlán, Sinaloa.</span>
+    <div class="content_iconos">
+      <div class="icono">
+        <img src="../../assets/imgs/kilometros.png" alt="kilometros"><span>15 km de Xperience Hotel</span>
+      </div>
+    </div>
+    <div></div>
+    <img src="../../assets/imgs/playas.png" alt="playas">
+    <p class="parrafo1 verdana2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, velit vitae rutrum rhoncus, arcu lectus tincidunt quam, nec faucibus orci tellus id mi. Duis pharetra metus sed malesuada tristique. Pellentesque orci elit, venenatis id rhoncus id, consequat ac urna.</p>
+  </div>
+  <div class="espacio_menu"></div>
+  <div ion-fixed class="content_menu">
+    <ul>
+      <li>
+        <img src="../../assets/imgs/actividades_menu.png" alt="actividades" (click)="onclickActividades()">
+        <a class="menu1">ACTIVIDADES</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/contacto_menu.png" alt="contacto" (click)="onclickContact()">
+        <a class="menu1">CONTACTO</a></li>
+      <li>
+        <img src="../../assets/imgs/icono_menu.png" alt="home" (click)="onclickMenu()">
+        <a class="menu1">XPERIENCE</a></li>
+      <li>
+        <img src="../../assets/imgs/llave_menu.png" alt="llaves" (click)="onclickLlaves()">
+        <a class="menu1">LLAVE</a></li>
+      <li>
+        <img src="../../assets/imgs/perfil_menu.png" alt="perfil" (click)="onclickPerfil()">
+        <a class="menu1">PERFIL</a></li>
+    </ul>
   </div>
 </ion-content>
 

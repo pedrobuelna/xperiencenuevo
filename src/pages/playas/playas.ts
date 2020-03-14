@@ -74,5 +74,5 @@ export class PlayasPage {
       ]
     });
     actionSheet.present();
-}
+  }
 }

@@ -16,19 +16,23 @@ page-actividades {
     //         font-size: 12px !important;
     //     }
     //   }
+    .fixed_menu{position: fixed;z-index: 3;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;width: 100%;background: white;}
+    .fixed_menu.active{transition: all 0.3s ease;}
+    #habitacion1{margin-top: 160px;}
+    .fixed_menu.activeSecond ul{margin: 0;}
     .logo2{margin: 15px auto 0;max-width: 100px;display: block;}
     .titulo1{font-size: 12px;}
     li{list-style: none; display: inline;font-size: 12px;}
-    .menu_carrusel ul{margin: 40px 0;padding: 0;text-align: center;}
-    .selected{font-size: 14px;padding: 0 0px;}
+    .menu_carrusel ul{margin: 20px 0;padding: 0;text-align: center;font-family: verdana2;height: 20px;overflow: hidden;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;}
+    .selected{font-size: 14px;padding: 0 0px;font-weight: bold;}
     .content_recamara{max-width: 85%;margin: 20px auto;}
     .content_recamara img[alt="playas"]{border-radius: 25px;}
     .content_recamara span{color: #575756;}
+    .scroll-content .content_recamara:last-child{margin-bottom: 150px;}
     .content_iconos{margin-top: 10px;margin-bottom: 20px;}
     .content_iconos span{position: relative;bottom: 5px;margin-left: 5px;font-size: 9px;}
     .icono{display: inline-block;}
     img[alt="kilometros"]{max-width: 16px;}
     .parrafo1{text-align: justify;}
-    .fixed_menu{height: 170px;}
     .test_class{background-color: white;width: 100%;}
 }

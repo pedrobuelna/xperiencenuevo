@@ -75,7 +75,7 @@ export class PHabitacionPage {
         console.log(habitacion3VAR);
       } else if(event.scrollTop >= habitacion4VAR) {
         $('.habitacionLess').removeClass('selected');
-        $('.habitacion3').addClass('selected');
+        $('.habitacion4').addClass('selected');
         console.log(habitacion4VAR);
       }
 
@@ -91,6 +91,22 @@ export class PHabitacionPage {
   scrollComplete(event) {
     // your content here of scroll is finished
   }
-
-  
+  onclickMenu(){
+    this.navCtrl.push("MenuPage")
+  }
+  onclickActividades(){
+    this.navCtrl.push("ActividadesPage")
+  }
+  onclickContact(){
+    this.navCtrl.push("ContactoPage")
+  }
+  onclickLlaves(){
+    this.navCtrl.push("LlavesPage")
+  }
+  onclickPerfil(){
+    this.navCtrl.push("EditarinfoautoPage")
+  }
+  onclickLogin(){
+    this.navCtrl.push("LoginPage")
+  }
 }

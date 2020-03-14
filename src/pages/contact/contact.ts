@@ -48,5 +48,7 @@ export class ContactPage {
   callNumber2(phoneNumber){
     window.open('tel:' + phoneNumber, '_system');
   }
-
+  onclickOpenMenu(){
+    this.navCtrl.push("HabitacionPage")
+  }
 }

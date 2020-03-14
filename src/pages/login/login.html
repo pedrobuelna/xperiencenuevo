@@ -31,8 +31,33 @@
       </div>
      
       <div class="content_btn1">
-        <button ion-button color="dark" [disabled]="formgroup.invalid">Login</button>
+        <button ion-button color="dark" [disabled]="formgroup.invalid" (click)="onclickMenu()">Login</button>
       </div>
     </form>
+  </div>
+  <div class="espacio_menu"></div>
+  <div ion-fixed class="content_menu">
+    <ul>
+      <li>
+        <img src="../../assets/imgs/actividades_menu.png" alt="actividades" (click)="onclickActividades()">
+        <a class="menu1">ACTIVIDADES</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/contacto_menu.png" alt="contacto" (click)="onclickContact()">
+        <a class="menu1">CONTACTO</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/icono_menu.png" alt="home" (click)="onclickMenu()">
+        <a class="menu1">XPERIENCE</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/cama_menu.png" alt="cama" (click)="onclickLogin()">
+        <a class="menu1">RESERVA</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/perfil_menu.png" alt="perfil" (click)="onclickPerfil()">
+        <a class="menu1">PERFIL</a>
+      </li>
+    </ul>
   </div>
 </ion-content>

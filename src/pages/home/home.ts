@@ -26,14 +26,14 @@ export class HomePage {
   
   onclickPageReserva(){
     //this.navCtrl.setRoot(TabsPage,null,{direction:"forward",animate:true})
-    this.navCtrl.push(TabsPage)
+    this.navCtrl.push("PHabitacionPage")
   }
   onclickMenuPrincipal(){
     //this.navCtrl.setRoot("MenuprincipalPage",null,{direction:"forward",animate:true})
     this.navCtrl.push("HabitacionPage")
   }
   onclickLogin(){
-    this.navCtrl.push(LoginPage)
+    this.navCtrl.push("LoginPage")
   }
   
 }
