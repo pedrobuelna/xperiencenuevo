@@ -43,13 +43,13 @@
                 <button ion-button color="light" clear>TOALLAS EXTRAS</button>
               </div>
               <div>
-                <button ion-button color="light" clear (click)="onclickEditarinformacionpersonal()">NO MOLESTAR</button>
+                <button ion-button color="light" clear>NO MOLESTAR</button>
               </div>
               <div>
                 <button ion-button color="light" clear (click)="onclickParking()">VALET PARKING</button>
               </div>
               <div>
-                <button ion-button color="light" clear (click)="onclickCompartir()">OTROS</button>
+                <button ion-button color="light" clear>OTROS</button>
               </div>
               <div>
                 <button ion-button color="light" clear >CHECK OUT</button>
@@ -142,7 +142,29 @@
       <!-- <div class="beforeCarrucel" (click)="beforeSlide()"><img src="../../assets/imgs/flechablanca.png" alt="flecha"></div>
       <div class="nextCarrucel" (click)="nextSlide()"><img src="../../assets/imgs/flechablanca.png" alt="flecha"></div> -->
     </div>
-
   </ion-list>
-  
+  <div ion-fixed class="content_menu logueado">
+    <ul>
+      <li>
+        <img src="../../assets/imgs/actividades_menu2.png" alt="actividades" (click)="onclickActividades()">
+        <a class="menu1">ACTIVIDADES</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/contacto_menu2.png" alt="contacto" (click)="onclickContact()">
+        <a class="menu1">CONTACTO</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/home_menu2.png" alt="home" (click)="onclickMenu()">
+        <a class="menu1">XPERIENCE</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/llave_menu2.png" alt="llave" (click)="onclickLlaves()">
+        <a class="menu1">LLAVE</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/perfil_menu2.png" alt="perfil" (click)="onclickPerfil()">
+        <a class="menu1">PERFIL</a>
+      </li>
+    </ul>
+  </div>
 </ion-content>

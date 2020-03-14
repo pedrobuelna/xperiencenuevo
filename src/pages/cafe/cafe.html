@@ -13,24 +13,158 @@
 <ion-content padding>
   <img src="../../assets/imgs/logo1.png" alt="logo1" class="imgLogo">
   <nav class="menu_carrusel bold">
-    <ul>
-      <li><button ion-button color="light" clear (click)="onclickHabitacion()">Habitación</button></li>
+    <ul >
+      <!-- <li class="selected"><button ion-button color="light" clear>Habitación</button></li>
       <li><button ion-button color="light" clear (click)="onclickRestaurant()">Restaurant</button></li>
       <li><button ion-button color="light" clear (click)="onclickSkybar()">SkyBar</button></li>
-      <li class="selected"><button ion-button color="light" clear >Café</button></li>
-      <li><button ion-button color="light" clear (click)="onclickActividades()">Actividades</button></li>
+      <li><button ion-button color="light" clear (click)="onclickCafe()">Café</button></li>
+      <li><button ion-button color="light" clear (click)="onclickActividades()">Actividades</button></li> -->
+      <li #selected class="selected"><button ion-button color="light" clear (click)="goToSlide1()">Habitación</button></li>
+      <li #selected2 class="selected2"><button ion-button color="light" clear (click)="goToSlide2()">Restaurant</button></li>
+      <li #selected3 class="selected3"><button ion-button color="light" clear (click)="goToSlide3()">SkyBar</button></li>
+      <li #selected4 class="selected4"><button ion-button color="light" clear (click)="goToSlide4()">Café</button></li>
+      <li #selected5 class="selected5"><button ion-button color="light" clear (click)="goToSlide5()">Actividades</button></li>
+      
     </ul>
   </nav>
-  <div class="menu_content">
-    <div>
-      <button ion-button color="light" clear>MENÚ</button>
+  <ion-list>
+    <div class="carrucel">
+      <ion-slides pager loop style="height:70VH" (ionSlideDidChange)="slideChanged()"  initialSlide="3">
+        <ion-slide >
+          <div class="slide">
+            <div class="menu_content">
+              <div>
+                <button ion-button color="light" clear>CHECK IN</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>LIMPIEZA</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>TOALLAS EXTRAS</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>NO MOLESTAR</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear (click)="onclickParking()">VALET PARKING</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>OTROS</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear >CHECK OUT</button>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide" (ionSlideDidChange)="slideChanged2()">
+            <div class="menu_content">
+              <div>
+                <button ion-button color="light" clear (click)="onclickMenu()">MENU</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>ROOM SERVICE</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>RESERVACIONES</button>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide">
+            <div class="menu_content">
+              <div>
+                <button ion-button color="light" clear>MENU</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>HORARIOS</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>ACTIVIDADES</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>RESERVACIONES</button>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide">
+            <div class="menu_content">
+              <div>
+                <button ion-button color="light" clear>MENÚ</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>ROOM SERVICE</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>RESERVACIONES</button>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+        <ion-slide>
+          <div class="slide">
+            <div class="menu_content">
+              <div>
+                <button ion-button color="light" clear (click)="onclickPlayas()">PLAYAS</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>A. DEPORTIVAS</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>A. CULTURALES</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>A. DIVERSIÓN</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>A. ACUÁTICAS</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>A. NOCHE</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>PLAZAS COMERCIALES</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>RESTAURANTES</button>
+              </div>
+              <div>
+                <button ion-button color="light" clear>CASINO ONLINE</button>
+              </div>
+            </div>
+          </div>
+        </ion-slide>
+      </ion-slides>
+      <!-- <div class="beforeCarrucel" (click)="beforeSlide()"><img src="../../assets/imgs/flechablanca.png" alt="flecha"></div>
+      <div class="nextCarrucel" (click)="nextSlide()"><img src="../../assets/imgs/flechablanca.png" alt="flecha"></div> -->
     </div>
-    <div>
-      <button ion-button color="light" clear>ROOM SERVICE</button>
-    </div>
-    <div>
-      <button ion-button color="light" clear>RESERVACIONES</button>
-    </div>
+  </ion-list>
+  <div class="espacio_menu"></div>
+  <div ion-fixed class="content_menu logueado">
+    <ul>
+      <li>
+        <img src="../../assets/imgs/actividades_menu2.png" alt="actividades" (click)="onclickActividades()">
+        <a class="menu1">ACTIVIDADES</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/contacto_menu2.png" alt="contacto" (click)="onclickContact()">
+        <a class="menu1">CONTACTO</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/home_menu2.png" alt="home" (click)="onclickMenu()">
+        <a class="menu1">XPERIENCE</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/llave_menu2.png" alt="llave" (click)="onclickLlaves()">
+        <a class="menu1">LLAVE</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/perfil_menu2.png" alt="perfil" (click)="onclickPerfil()">
+        <a class="menu1">PERFIL</a>
+      </li>
+    </ul>
   </div>
-</ion-content>
-

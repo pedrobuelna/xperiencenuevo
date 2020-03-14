@@ -5,7 +5,7 @@ import { IonicPage, NavController, NavParams, Slides, Content } from 'ionic-angu
 // import { SkybarPage } from '../skybar/skybar';
 // import { CafePage } from '../cafe/cafe';
 // import { CompartirPage } from '../compartir/compartir';
-import { ActividadesPage } from '../actividades/actividades';
+//import { ActividadesPage } from '../actividades/actividades';
 /**
  * Generated class for the HabitacionPage page.
  *
@@ -56,11 +56,14 @@ export class HabitacionPage {
   }
   onclickActividades(){
     //this.navCtrl.setRoot("ActividadesPage",null,{direction:"forward",animate:true})
-    this.navCtrl.push(ActividadesPage)
+    this.navCtrl.push("ActividadesPage")
   }
   onclickCompartir(){
     //this.navCtrl.setRoot("CompartirPage",null,{direction:"forward",animate:true})
     this.navCtrl.push("CompartirPage")
+  }
+  onclickMenu(){
+    this.navCtrl.push("MenuprincipalPage")
   }
   goToSlide1() {
     this.slides.slideTo(1, 500);

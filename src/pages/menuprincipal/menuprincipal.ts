@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { RestaurantPage } from '../restaurant/restaurant';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the MenuprincipalPage page.
@@ -27,11 +27,11 @@ export class MenuprincipalPage {
     //this.navCtrl.push("SigninPage") 
   }
   onclickResaturant(){
-    this.navCtrl.push("MenuprincipalPage")
+    this.navCtrl.push("RestaurantPage")
 //    this.navCtrl.push("RestaurantPage")
   }
   onclickMenu(){
-    this.navCtrl.push("MenuPage")
+    this.navCtrl.push("MenuprincipalPage")
   }
   onclickActividades(){
     this.navCtrl.push("ActividadesPage")
@@ -48,5 +48,15 @@ export class MenuprincipalPage {
   onclickLogin(){
     this.navCtrl.push("LoginPage")
   }
+  onclickSkybar(){
+    this.navCtrl.push("SkybarPage")
+  }
+  onclickCafe(){
+    this.navCtrl.push("CafePage")
+  }
+  onclickCerrarsesion(){
+    this.navCtrl.push(HomePage)
+  }
+  
 
 }

@@ -92,10 +92,10 @@ export class PHabitacionPage {
     // your content here of scroll is finished
   }
   onclickMenu(){
-    this.navCtrl.push("MenuPage")
+    this.navCtrl.push("MenuprincipalPage")
   }
   onclickActividades(){
-    this.navCtrl.push("ActividadesPage")
+    this.navCtrl.push("PlayasPage")
   }
   onclickContact(){
     this.navCtrl.push("ContactoPage")

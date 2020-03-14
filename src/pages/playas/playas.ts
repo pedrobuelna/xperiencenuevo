@@ -23,6 +23,7 @@ export class PlayasPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PlayasPage');
   }
+  
   openMenu() {
     let actionSheet = this.actionsheetCtrl.create({
       title: 'Direcciones',
