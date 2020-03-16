@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the MenuPage page.
+ * Generated class for the ChatPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,30 +10,35 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-menu',
-  templateUrl: 'menu.html',
+  selector: 'page-chat',
+  templateUrl: 'chat.html',
 })
-export class MenuPage {
+export class ChatPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-ionViewDidLoad() {
-    console.log('ionViewDidLoad MenuPage');
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad ChatPage');
+    $.getJSON( "assets/js/demo-data/data.json", function( dataJSON ) {
+      $('#flowchat').flowchat({
+        dataJSON: dataJSON
+      });
+    });
+  }
+  onclickMenu(){
+    this.navCtrl.push("MenuprincipalPage")
   }
   onclickActividades(){
-    this.navCtrl.push("ActividadesPage")
+    this.navCtrl.push("PlayasPage")
   }
   onclickContact(){
     this.navCtrl.push("ContactoPage")
   }
-  onclickLlaves(){
-    this.navCtrl.push("LlavesPage")
-  }
-  onclickPerfil(){
-    this.navCtrl.push("EditarinfopersonalPage")
-  }
   onclickLogin(){
     this.navCtrl.push("LoginPage")
+  }
+  onclickRegistro(){
+    this.navCtrl.push("RegistroPage")
   }
 }

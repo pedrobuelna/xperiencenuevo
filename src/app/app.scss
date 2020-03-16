@@ -62,7 +62,7 @@ body{margin-bottom: 230px;}
 .content_menu ul li img{display: block;margin: 0 auto 7px;width: 30px;position: relative;}
 .content_menu ul li img[alt="home"]{width: 60px;position: absolute;left: calc(50% - 30px);top: -19px;}
 .content_menu ul li img[alt="perfil"]{width: 25px;height: 27px;}
-.content_menu ul li img[alt="llaves"]{width: 25px;height: 27px;}
+.content_menu ul li img[alt="llave"],.content_menu ul li img[alt="llaves"]{width: 27px;}
 .content_menu ul li a{color: black;font-size: 1rem;display: inline-block;}
 .content_menu ul ul > li:nth-child(3){margin-top: 37px;}
 .content_menu.logueado{background: black;border-top: 0;}

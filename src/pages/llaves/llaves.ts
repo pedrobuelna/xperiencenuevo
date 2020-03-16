@@ -21,11 +21,20 @@ export class LlavesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad LlavesPage');
   }
-  onclickAdicional(){
-
+  onclickActividades(){
+    
+    this.navCtrl.push("ActividadesPage")
+  }
+  onclickContacto(){
+    this.navCtrl.push("ContactoPage")
+  }
+  onclickPerfil(){
+    this.navCtrl.push("EditarinfopersonalPage")
+  }
+  onclickMenu(){
+    this.navCtrl.push("MenuprincipalPage")
   }
   onclickAbrir() {
-  
     const confirm = this.alertCtrl.create({
       title: 'Abrir Habitacion',
       message: 'Seguro que deseas abrir la habitacion',

@@ -16,41 +16,55 @@
   </div>
   <div class="content_info_personal">
     <div padding>
-      <h3 class="bold title1">Edita tu información personal</h3>
+      <h3 class="bold title1">Edita tu información de tu auto</h3>
     </div>
     <form action="" [formGroup]="formgroup">
       <div class="content_inputs">
         <div class="form__group field">
-          <input type="text" class="form__field" formControlName="name" placeholder="name" name="name" id='name' required [(ngModel)]="nombreVal"/>
-          <label for="name" class="form__label">Nombre</label>
+          <input type="text" class="form__field" formControlName="marca" placeholder="marca" name="marca" id='marca' required [(ngModel)]="marcaVal"/>
+          <label for="marca" class="form__label">Marca</label>
         </div>
         <div class="form__group field">
-          <input type="text" class="form__field" placeholder="Apellidos" formControlName="apellidos" name="apellidos" id='apellidos' required [(ngModel)]="apellidosVal"/>
-          <label for="apellidos" class="form__label">Apellidos</label>
+          <input type="text" class="form__field" placeholder="modelo" formControlName="modelo" name="modelo" id='modelo' required [(ngModel)]="modeloVal"/>
+          <label for="apellidos" class="form__label">Modelo</label>
         </div>
         <div class="form__group field">
-          <input type="input" class="form__field" placeholder="Sexo" formControlName="sexo" name="sexo" id='sexo' required [(ngModel)]="sexoVal"/>
-          <label for="sexo" class="form__label">Sexo</label>
+          <input type="input" class="form__field" placeholder="color" formControlName="color" name="color" id='color' required [(ngModel)]="colorVal"/>
+          <label for="sexo" class="form__label">Color</label>
         </div>
         <div class="form__group field">
-          <input type="date" class="form__field" placeholder="Fecha de Nacimiento" formControlName="fechaNacimiento" name="fechaNacimiento" id='fechaNacmiento' required [(ngModel)]="fechaNacimientoVal"/>
-          <label for="fechaNacmiento" class="form__label">Fecha de Nacimiento</label>
+          <input type="text" class="form__field" placeholder="placas" formControlName="placas" name="placas" id='placas' required [(ngModel)]="placasVal"/>
+          <label for="placas" class="form__label">Placas</label>
         </div>
         <div class="form__group field">
-          <input type="email" class="form__field" placeholder="Correo Electronico" formControlName="email" name="correoElectronico" id='correoElectronico' required  [(ngModel)]="correoElectronico"/>
-          <label for="correoElectronico" class="form__label">Correo Electronico</label>
+          <input type="text" class="form__field" placeholder="horaRecepcion" formControlName="horaRecepcion" name="horaRecepcion" id='horaRecepcion' required  [(ngModel)]="horaRecepcionVal"/>
+          <label for="horaRecepcion" class="form__label">Hora de recepción del vehículo</label>
         </div>
-        <div class="form__group field">
-          <input type="tel" class="form__field" placeholder="Numeros de Telefono" formControlName="numeroTelefono" name="numeroTelefono" id='numeroTelefono' required [(ngModel)]="numerosTelefonoVal"/>
-          <label for="numeroTelefono" class="form__label">Numeros de Telefono</label>
-        </div>
-      </div>
-      <div padding>
-        <h3 class="title5 bold">Contacto de Emergencia</h3>
       </div>
       <div class="content_btn1">
-        <button ion-button color="dark" [disabled]="formgroup.invalid">Guardar</button>
+        <button ion-button color="dark" [disabled]="formgroup.invalid">PEDIR AUTO</button>
       </div>
     </form>
+  </div>
+  <div class="espacio_menu"></div>
+  <div ion-fixed class="content_menu">
+    <ul>
+      <li>
+        <img src="../../assets/imgs/actividades_menu.png" alt="actividades" (click)="onclickActividades()">
+        <a class="menu1">ACTIVIDADES</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/contacto_menu.png" alt="contacto" (click)="onclickContact()">
+        <a class="menu1">CONTACTO</a></li>
+      <li>
+        <img src="../../assets/imgs/icono_menu.png" alt="home" (click)="onclickMenu()">
+        <a class="menu1">XPERIENCE</a></li>
+      <li>
+        <img src="../../assets/imgs/llave_menu.png" alt="llaves" (click)="onclickLlaves()">
+        <a class="menu1">LLAVE</a></li>
+      <li>
+        <img src="../../assets/imgs/perfil_menu.png" alt="perfil" (click)="onclickPerfil()">
+        <a class="menu1">PERFIL</a></li>
+    </ul>
   </div>
 </ion-content>

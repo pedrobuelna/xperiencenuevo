@@ -103,8 +103,8 @@ export class PHabitacionPage {
   onclickLlaves(){
     this.navCtrl.push("LlavesPage")
   }
-  onclickPerfil(){
-    this.navCtrl.push("EditarinfoautoPage")
+  onclickRegistro(){
+    this.navCtrl.push("RegistroPage")
   }
   onclickLogin(){
     this.navCtrl.push("LoginPage")

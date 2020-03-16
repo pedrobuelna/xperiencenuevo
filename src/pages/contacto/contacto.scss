@@ -12,4 +12,8 @@ page-contacto {
     .content_contacto button{padding-left: 0 !important;}
     .item-block:first-child{border-top: 0 !important;}
     .content_menu ul li img[alt="home"]{max-width: 60px !important;}
+    ion-content > div.scroll-content > div.content_contacto > ion-list > button > div.item-inner > div > ion-label > div{margin-left: 20px;}
+    .item-ios[detail-push] .item-inner, button.item-ios:not([detail-none]) .item-inner, a.item-ios:not([detail-none]) .item-inner {
+        padding-right: 32px;
+        background-position: right calc(26px + env(safe-area-inset-right)) center;}
 }

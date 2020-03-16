@@ -44,8 +44,8 @@ export class ContactoPage {
     console.log("Selected Item", item);
   }
   abrirFacebook(){
-    //window.open("https://www.facebook.com/")
-    window.open("https://api.whatsapp.com/send?phone=6692124207")
+    window.open("https://www.facebook.com/")
+    //window.open("https://api.whatsapp.com/send?phone=6692124207")
   }
   abrirInstagram(){
     window.open("https://www.instagram.com/")
@@ -61,5 +61,23 @@ export class ContactoPage {
   }
   onclickOpenMenu(){
     this.navCtrl.push("HabitacionPage")
+  }
+  onclickMenu(){
+    this.navCtrl.push("MenuprincipalPage")
+  }
+  onclickActividades(){
+    this.navCtrl.push("PlayasPage")
+  }
+  onclickContact(){
+    this.navCtrl.push("ContactoPage")
+  }
+  onclickLlaves(){
+    this.navCtrl.push("LlavesPage")
+  }
+  onclickRegistro(){
+    this.navCtrl.push("RegistroPage")
+  }
+  onclickChat(){
+    this.navCtrl.push("ChatPage")
   }
 }

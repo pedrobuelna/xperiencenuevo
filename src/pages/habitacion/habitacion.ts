@@ -65,6 +65,9 @@ export class HabitacionPage {
   onclickMenu(){
     this.navCtrl.push("MenuprincipalPage")
   }
+  onclickHome(){
+    this.navCtrl.push("HomePage")
+  }
   goToSlide1() {
     this.slides.slideTo(1, 500);
   }

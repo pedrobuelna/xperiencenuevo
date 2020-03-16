@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {FormBuilder, FormGroup, Validators, AbstractControl} from '@angular/forms';
+
 /**
- * Generated class for the EditarinfopersonalPage page.
+ * Generated class for the RegistroPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,10 +11,10 @@ import {FormBuilder, FormGroup, Validators, AbstractControl} from '@angular/form
 
 @IonicPage()
 @Component({
-  selector: 'page-editarinfopersonal',
-  templateUrl: 'editarinfopersonal.html',
+  selector: 'page-registro',
+  templateUrl: 'registro.html',
 })
-export class EditarinfopersonalPage {
+export class RegistroPage {
   formgroup:FormGroup;
   
   name:AbstractControl;
@@ -48,7 +49,24 @@ export class EditarinfopersonalPage {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad EditarinfopersonalPage');
+    console.log('ionViewDidLoad RegistroPage');
   }
-
+  onclickMenu(){
+    this.navCtrl.push("MenuprincipalPage")
+  }
+  onclickActividades(){
+    this.navCtrl.push("PlayasPage")
+  }
+  onclickContact(){
+    this.navCtrl.push("ContactoPage")
+  }
+  onclickLlaves(){
+    this.navCtrl.push("LlavesPage")
+  }
+  onclickRegistro(){
+    this.navCtrl.push("RegistroPage")
+  }
+  onclickLogin(){
+    this.navCtrl.push("LoginPage")
+  }
 }

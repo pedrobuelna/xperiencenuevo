@@ -23,7 +23,21 @@ export class PlayasPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad PlayasPage');
   }
-  
+  onclickMenu(){
+    this.navCtrl.push("MenuprincipalPage")
+  }
+  onclickContact(){
+    this.navCtrl.push("ContactoPage")
+  }
+  onclickLlaves(){
+    this.navCtrl.push("LlavesPage")
+  }
+  onclickRegistro(){
+    this.navCtrl.push("RegistroPage")
+  }
+  onclickLogin(){
+    this.navCtrl.push("LoginPage")
+  }
   openMenu() {
     let actionSheet = this.actionsheetCtrl.create({
       title: 'Direcciones',

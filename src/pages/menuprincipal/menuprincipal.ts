@@ -31,7 +31,7 @@ export class MenuprincipalPage {
 //    this.navCtrl.push("RestaurantPage")
   }
   onclickMenu(){
-    this.navCtrl.push("MenuprincipalPage")
+    this.navCtrl.push("MenuPage")
   }
   onclickActividades(){
     this.navCtrl.push("ActividadesPage")
@@ -43,7 +43,7 @@ export class MenuprincipalPage {
     this.navCtrl.push("LlavesPage")
   }
   onclickPerfil(){
-    this.navCtrl.push("EditarinfoautoPage")
+    this.navCtrl.push("EditarinfopersonalPage")
   }
   onclickLogin(){
     this.navCtrl.push("LoginPage")
