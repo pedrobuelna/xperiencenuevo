@@ -58,6 +58,9 @@ export class HabitacionPage {
     //this.navCtrl.setRoot("ActividadesPage",null,{direction:"forward",animate:true})
     this.navCtrl.push("ActividadesPage")
   }
+  onclickListadoroomservice(){
+    this.navCtrl.push("ListadoroomservicePage")
+  }
   onclickCompartir(){
     //this.navCtrl.setRoot("CompartirPage",null,{direction:"forward",animate:true})
     this.navCtrl.push("CompartirPage")

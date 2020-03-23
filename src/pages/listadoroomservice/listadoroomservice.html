@@ -1,0 +1,89 @@
+<!--
+  Generated template for the ListadoroomservicePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>listadoroomservice</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="content_banner">
+    <label class="imgTitle1">Enjoy the</label>
+    <label class="imgTitle2">Room service</label>
+  </div>
+  <div #fixed_menu class="fixed_menu" ion-fixed>
+    <img src="../../assets/imgs/logo1.png" alt="logo1" class="logo2">
+    <nav class="menu_carrusel bold" padding>
+      <ul #menuScrollx>
+        <li class="habitacionLess habitacion1 selected" (click)="goTo('habitacion1')">Favoritos</li>
+        <li class="habitacionLess habitacion2" (click)="goTo('habitacion2')">Desayunos</li>
+        <li class="habitacionLess habitacion3" (click)="onclickComida()">Comida</li>
+        <li class="habitacionLess habitacion4" (click)="goTo('habitacion4')">Bebidas</li>
+        <li class="habitacionLess habitacion4" (click)="goTo('habitacion4')">Cafetería</li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content_recomendaciones clearfix">
+    <div padding>
+      <img src="../../assets/imgs/recomendaciones.png" alt="fuego">
+      <span class="titulo1">Recomendaciones</span>
+      <span class="pipe">|</span>
+      <span class="subtitulo">Favoritos</span>
+    </div>
+    <div class="col first col3">
+      <img src="../../assets/imgs/comida_roomservice.png" alt="comida1">
+      <div class="titulo2">Hotcakes imperiales</div>
+      <div class="precio">$150.00</div>
+    </div>
+    <div class="col col3">
+      <img src="../../assets/imgs/comida_roomservice2.png" alt="comida2">
+      <div class="titulo2">Beef cheek</div>
+      <div class="precio">$210.00</div>
+    </div>
+    <div class="col col3">
+      <img src="../../assets/imgs/comida_roomservice3.png" alt="comida3">
+      <div class="titulo2">Pizza Margarita</div>
+      <div class="precio">$180.00</div>
+    </div>
+  </div>
+  <div class="content_agregar clearfix">
+    <div class="col col3 first">
+      <img src="../../assets/imgs/comida_roomservice3.png" alt="comida3">
+    </div>
+    <div class="content_compra">
+      <div class="bold">Pizza Margarita</div>
+      <div class="verdana2">Tomate, Ajo,Albaca fresco y queso mozarella</div>
+      <div class="precio bold">$180.00</div>
+      <button ion-button color="dark" outline>Agregar</button>
+    </div>
+  </div>
+  <div class="espacio_menu"></div>
+  <div ion-fixed class="content_menu logueado">
+    <ul>
+      <li>
+        <img src="../../assets/imgs/actividades_menu2.png" alt="actividades" (click)="onclickActividades()">
+        <a class="menu1">ACTIVIDADES</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/contacto_menu2.png" alt="contacto" (click)="onclickContact()">
+        <a class="menu1">CONTACTO</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/home_menu2.png" alt="home" (click)="onclickMenu()">
+        <a class="menu1">XPERIENCE</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/llave_menu2.png" alt="llave" (click)="onclickLlaves()">
+        <a class="menu1">LLAVE</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/perfil_menu2.png" alt="perfil" (click)="onclickPerfil()">
+        <a class="menu1">PERFIL</a>
+      </li>
+    </ul>
+  </div>
+</ion-content>

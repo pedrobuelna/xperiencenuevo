@@ -14,11 +14,19 @@ import { ActividadesPage } from '../../pages/actividades/actividades';
   templateUrl: 'p-habitacion.html',
 })
 export class PHabitacionPage {
-  @ViewChild(Slides) slides: Slides;
+  @ViewChild('slides') slides: Slides;
+  @ViewChild('slides2') slides2: Slides;
+  @ViewChild('slides3') slides3: Slides;
+  @ViewChild('slides4') slides4: Slides;
+  @ViewChild('slides5') slides5: Slides;
+  @ViewChild('slides6') slides6: Slides;
+  @ViewChild('slides7') slides7: Slides;
+  @ViewChild('slides8') slides8: Slides;
   @ViewChild(Content) content: Content;
   @ViewChild('fixed_menu') fixed_menu: any;
   @ViewChild('verificar') verificar: any;
   @ViewChild('contentID') contentID: any;
+  @ViewChild('menuScrollx') menuScrollx: any;
   
   
   constructor(public navCtrl: NavController, public navParams: NavParams,public modalCtrl: ModalController) {
@@ -31,15 +39,48 @@ export class PHabitacionPage {
     let contactModal = this.modalCtrl.create("CalendarioPage");
     contactModal.present();
   }
-  nextSlide () {
-    this.slides.slideNext();
+  nextSlide (index) {
+    if (index === 1) {
+      this.slides.slideNext();
+    } else if (index === 2) {
+      this.slides2.slideNext();
+    } else if (index === 3) {
+      this.slides3.slideNext();
+    } else if (index === 4) {
+      this.slides4.slideNext();
+    } else if (index === 5) {
+      this.slides5.slideNext();
+    } else if (index === 6) {
+      this.slides6.slideNext();
+    } else if (index === 7) {
+      this.slides7.slideNext();
+    } else if (index === 8) {
+      this.slides8.slideNext();
+    }
+    
   }
-  beforeSlide () {
-    this.slides.slidePrev();
+  beforeSlide (index) {
+    if (index === 1) {
+      this.slides.slidePrev();
+    } else if (index === 2) {
+      this.slides2.slidePrev();
+    } else if (index === 3) {
+      this.slides3.slidePrev();
+    } else if (index === 4) {
+      this.slides4.slidePrev();
+    } else if (index === 5) {
+      this.slides5.slidePrev();
+    } else if (index === 6) {
+      this.slides6.slidePrev();
+    } else if (index === 7) {
+      this.slides7.slidePrev();
+    } else if (index === 8) {
+      this.slides8.slidePrev();
+    }
   }
 
   goTo(habitacion) {
-    this.content.scrollTo(0, $('#'+habitacion).offset().top+this.content.scrollTop-124, 500);
+    this.content.scrollTo(0, $('#'+habitacion).offset().top+this.content.scrollTop+1, 500);
   }
 
   scrolling(event) {
@@ -47,10 +88,26 @@ export class PHabitacionPage {
     if(event){
       let fixedMenu = this.fixed_menu.nativeElement;
       let verificarVAR = this.verificar.nativeElement;
-      let habitacion1VAR = $('#habitacion1').offset().top+event.scrollTop-125;
-      let habitacion2VAR = $('#habitacion2').offset().top+event.scrollTop-125;
-      let habitacion3VAR = $('#habitacion3').offset().top+event.scrollTop-125;
-      let habitacion4VAR = $('#habitacion4').offset().top+event.scrollTop-125;
+      let menuScrollxVAR = this.menuScrollx.nativeElement;
+
+      let habitacion1VAR = $('#habitacion1').offset().top+event.scrollTop-1;
+      let habitacion2VAR = $('#habitacion2').offset().top+event.scrollTop-1;
+      let habitacion3VAR = $('#habitacion3').offset().top+event.scrollTop-1;
+      let habitacion4VAR = $('#habitacion4').offset().top+event.scrollTop-1;
+      let habitacion5VAR = $('#habitacion5').offset().top+event.scrollTop-1;
+      let habitacion6VAR = $('#habitacion6').offset().top+event.scrollTop-1;
+      let habitacion7VAR = $('#habitacion7').offset().top+event.scrollTop-1;
+      let habitacion8VAR = $('#habitacion8').offset().top+event.scrollTop-1;
+
+      let habitacion1Menu = $('.habitacion1').offset().left+menuScrollxVAR.scrollLeft;
+      let habitacion2Menu = $('.habitacion2').offset().left+menuScrollxVAR.scrollLeft-180+($('.habitacion2').width()/2);
+      let habitacion3Menu = $('.habitacion3').offset().left+menuScrollxVAR.scrollLeft-180+($('.habitacion3').width()/2);
+      let habitacion4Menu = $('.habitacion4').offset().left+menuScrollxVAR.scrollLeft-180+($('.habitacion4').width()/2);
+      let habitacion5Menu = $('.habitacion5').offset().left+menuScrollxVAR.scrollLeft-180+($('.habitacion5').width()/2);
+      let habitacion6Menu = $('.habitacion6').offset().left+menuScrollxVAR.scrollLeft-180+($('.habitacion6').width()/2);
+      let habitacion7Menu = $('.habitacion7').offset().left+menuScrollxVAR.scrollLeft-180+($('.habitacion7').width()/2);
+      let habitacion8Menu = $('.habitacion8').offset().left+menuScrollxVAR.scrollLeft-180+($('.habitacion8').width()/2);
+      
       
       if(event.scrollTop > 130 && event.scrollTop <= 400){
         fixedMenu.classList.add('active')
@@ -64,19 +121,42 @@ export class PHabitacionPage {
       if( (event.scrollTop >= habitacion1VAR || event.scrollTop < habitacion1VAR) && event.scrollTop < habitacion2VAR ){
         $('.habitacionLess').removeClass('selected');
         $('.habitacion1').addClass('selected');
-        console.log(habitacion1VAR);
+        menuScrollxVAR.scrollTo(0, 0, 0);
       } else if(event.scrollTop >= habitacion2VAR && event.scrollTop < habitacion3VAR) {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion2').addClass('selected');
-        console.log(habitacion2VAR);
+        menuScrollxVAR.scrollTo(habitacion2Menu, 0, 0);
+        console.log(habitacion2Menu);
       } else if(event.scrollTop >= habitacion3VAR && event.scrollTop < habitacion4VAR) {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion3').addClass('selected');
-        console.log(habitacion3VAR);
-      } else if(event.scrollTop >= habitacion4VAR) {
+        menuScrollxVAR.scrollTo(habitacion3Menu, 0, 0);
+        console.log(habitacion3Menu);
+      } else if(event.scrollTop >= habitacion4VAR && event.scrollTop < habitacion5VAR) {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion4').addClass('selected');
-        console.log(habitacion4VAR);
+        menuScrollxVAR.scrollTo(habitacion4Menu, 0, 0);
+        console.log(habitacion4Menu);
+      } else if(event.scrollTop >= habitacion5VAR && event.scrollTop < habitacion6VAR) {
+        $('.habitacionLess').removeClass('selected');
+        $('.habitacion5').addClass('selected');
+        menuScrollxVAR.scrollTo(habitacion5Menu, 0, 0);
+        console.log(habitacion5Menu);
+      } else if(event.scrollTop >= habitacion6VAR && event.scrollTop < habitacion7VAR) {
+        $('.habitacionLess').removeClass('selected');
+        $('.habitacion6').addClass('selected');
+        menuScrollxVAR.scrollTo(habitacion6Menu, 0, 0);
+        console.log(habitacion6Menu);
+      } else if(event.scrollTop >= habitacion7VAR && event.scrollTop < habitacion8VAR) {
+        $('.habitacionLess').removeClass('selected');
+        $('.habitacion7').addClass('selected');
+        menuScrollxVAR.scrollTo(habitacion7Menu, 0, 0);
+        console.log(habitacion7Menu);
+      } else if(event.scrollTop >= habitacion8VAR) {
+        $('.habitacionLess').removeClass('selected');
+        $('.habitacion8').addClass('selected');
+        menuScrollxVAR.scrollTo(habitacion8Menu, 0, 0);
+        console.log(habitacion8Menu);
       }
 
       if(event.deltaY > 0){

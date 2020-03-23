@@ -16,16 +16,16 @@
   </div>
   <div class="content_info_personal">
     <div padding>
-      <h3 class="bold title1">Edita tu información personal</h3>
+      <h3 class="bold title1">Login</h3>
     </div>
     <form action="" [formGroup]="formgroup">
       <div class="content_inputs">
         <div class="form__group field">
-          <input type="text" class="form__field" placeholder="Correo Electrónico" formControlName="correo"  name="correo" id='correo' required [(ngModel)]="correoVal"/>
+          <input type="email" class="form__field" placeholder="Correo Electrónico" formControlName="correo"  name="correo" id='correo' required [(ngModel)]="correoVal"/>
           <label for="name" class="form__label">Correo Electrónico</label>
         </div>
         <div class="form__group field">
-          <input type="text" class="form__field" placeholder="Contraseña" formControlName="contrasena" name="contrasena" id='contrasena' required [(ngModel)]="contrasenaVal"/>
+          <input type="password" class="form__field" placeholder="Contraseña" formControlName="contrasena" name="contrasena" id='contrasena' required [(ngModel)]="contrasenaVal"/>
           <label for="apellidos" class="form__label">Contraseña</label>
         </div>
       </div>
