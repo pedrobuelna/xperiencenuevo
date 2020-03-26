@@ -19,7 +19,7 @@ ul.chat-window>li .text {
 }
 
 ul.chat-window>li.bot .text {
-  background-color: #01bad8;
+  background-color: black;
   color: #fff;
   float: left;
 }
@@ -62,7 +62,7 @@ ul.chat-window>li.options>ul {
 ul.chat-window>li.options>ul>li {
   border-radius: 10px;
   padding: 5px 10px;
-  border: 1px solid #01bad8;
+  border: 1px solid black;
   display: inline-block;
   cursor: pointer;
   margin-left: 10px;

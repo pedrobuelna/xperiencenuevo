@@ -10,12 +10,12 @@
   </ion-navbar>
 </ion-header> -->
 
-<ion-content padding>
-  <div #fixed_menu class="fixed_menu" ion-fixed>
+<ion-content  (ionScroll)="scrolling($event)"  id="contentID">
+  <!-- <div #fixed_menu class="fixed_menu">
+    <img src="../../assets/imgs/flecha_atras.png" alt="flecha_atras" (click)="atras()">
     <img src="../../assets/imgs/logo2.png" alt="logo2" class="logo2">
     <nav class="menu_carrusel bold" padding>
       <ul #menuScrollx>
-        <!-- <li class="habitacionLess habitacion1" (click)="goTo('habitacion1')">Favoritos</li> -->
         <li class="habitacionLess habitacion1">Favoritos</li>
         <li class="habitacionLess habitacion2">Desayunos</li>
         <li class="habitacionLess habitacion3 selected">Comida</li>
@@ -23,5 +23,148 @@
         <li class="habitacionLess habitacion5">Cafetería</li>
       </ul>
     </nav>
+  </div> -->
+  <div class="contenido_menufixed"></div>
+  <div #fixed_menu class="fixed_menu" ion-fixed>
+    <img alt="flecha_atras" src="../../assets/imgs/flecha_atras.png">
+    <img src="../../assets/imgs/logo2.png" alt="logo2" class="logo2">
+    <nav class="menu_carrusel bold" padding>
+      <ul #menuScrollx>
+        <li class="habitacionLess habitacion1">Favoritos</li>
+        <li class="habitacionLess habitacion2">Desayunos</li>
+        <li class="habitacionLess habitacion3 selected">Comida</li>
+        <li class="habitacionLess habitacion4">Bebidas</li>
+        <li class="habitacionLess habitacion5">Cafetería</li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content_recamara" id="habitacion1" #habitacion1>
+    <div class="content_agregar clearfix">
+      <div class="col col3 first">
+        <img src="../../assets/imgs/comida1.png" alt="comida1">
+      </div>
+      <div class="content_compra">
+        <div class="bold">Pizza Margarita</div>
+        <div class="verdana2">Tomate, Ajo,Albaca fresco y queso mozarella</div>
+        <div class="precio bold">$180.00</div>
+        <button ion-button color="dark" outline (click)="onclickCompraproducto()">Agregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="content_recamara" id="habitacion2" #habitacion2>
+    <div class="content_agregar clearfix">
+      <div class="col col3 first">
+        <img src="../../assets/imgs/comida2.png" alt="comida2">
+      </div>
+      <div class="content_compra">
+        <div class="bold">Pizza Margarita</div>
+        <div class="verdana2">Tomate, Ajo,Albaca fresco y queso mozarella</div>
+        <div class="precio bold">$180.00</div>
+        <button ion-button color="dark" outline>Agregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="content_recamara" id="habitacion3" #habitacion3>
+    <div class="content_agregar clearfix">
+      <div class="col col3 first">
+        <img src="../../assets/imgs/comida3.png" alt="comida3">
+      </div>
+      <div class="content_compra">
+        <div class="bold">Pizza Margarita</div>
+        <div class="verdana2">Tomate, Ajo,Albaca fresco y queso mozarella</div>
+        <div class="precio bold">$180.00</div>
+        <button ion-button color="dark" outline>Agregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="content_recamara" id="habitacion4" #habitacion4>
+    <div class="content_agregar clearfix">
+      <div class="col col3 first">
+        <img src="../../assets/imgs/comida4.png" alt="comida4">
+      </div>
+      <div class="content_compra">
+        <div class="bold">Pizza Margarita</div>
+        <div class="verdana2">Tomate, Ajo,Albaca fresco y queso mozarella</div>
+        <div class="precio bold">$180.00</div>
+        <button ion-button color="dark" outline>Agregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="content_recamara" id="habitacion1" #habitacion1>
+    <div class="content_agregar clearfix">
+      <div class="col col3 first">
+        <img src="../../assets/imgs/comida1.png" alt="comida1">
+      </div>
+      <div class="content_compra">
+        <div class="bold">Pizza Margarita</div>
+        <div class="verdana2">Tomate, Ajo,Albaca fresco y queso mozarella</div>
+        <div class="precio bold">$180.00</div>
+        <button ion-button color="dark" outline (click)="onclickCompraproducto()">Agregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="content_recamara" id="habitacion2" #habitacion2>
+    <div class="content_agregar clearfix">
+      <div class="col col3 first">
+        <img src="../../assets/imgs/comida2.png" alt="comida2">
+      </div>
+      <div class="content_compra">
+        <div class="bold">Pizza Margarita</div>
+        <div class="verdana2">Tomate, Ajo,Albaca fresco y queso mozarella</div>
+        <div class="precio bold">$180.00</div>
+        <button ion-button color="dark" outline>Agregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="content_recamara" id="habitacion3" #habitacion3>
+    <div class="content_agregar clearfix">
+      <div class="col col3 first">
+        <img src="../../assets/imgs/comida3.png" alt="comida3">
+      </div>
+      <div class="content_compra">
+        <div class="bold">Pizza Margarita</div>
+        <div class="verdana2">Tomate, Ajo,Albaca fresco y queso mozarella</div>
+        <div class="precio bold">$180.00</div>
+        <button ion-button color="dark" outline>Agregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="content_recamara" id="habitacion4" #habitacion4>
+    <div class="content_agregar clearfix">
+      <div class="col col3 first">
+        <img src="../../assets/imgs/comida4.png" alt="comida4">
+      </div>
+      <div class="content_compra">
+        <div class="bold">Pizza Margarita</div>
+        <div class="verdana2">Tomate, Ajo,Albaca fresco y queso mozarella</div>
+        <div class="precio bold">$180.00</div>
+        <button ion-button color="dark" outline>Agregar</button>
+      </div>
+    </div>
+  </div>
+  <div class="espacio_menu"></div>
+  <div ion-fixed class="content_menu logueado">
+    <ul>
+      <li>
+        <img src="../../assets/imgs/actividades_menu2.png" alt="actividades" (click)="onclickActividades()">
+        <a class="menu1">ACTIVIDADES</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/contacto_menu2.png" alt="contacto" (click)="onclickContact()">
+        <a class="menu1">CONTACTO</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/home_menu2.png" alt="home" (click)="onclickMenu()">
+        <a class="menu1">XPERIENCE</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/llave_menu2.png" alt="llave" (click)="onclickLlaves()">
+        <a class="menu1">LLAVE</a>
+      </li>
+      <li>
+        <img src="../../assets/imgs/perfil_menu2.png" alt="perfil" (click)="onclickPerfil()">
+        <a class="menu1">PERFIL</a>
+      </li>
+    </ul>
   </div>
 </ion-content>

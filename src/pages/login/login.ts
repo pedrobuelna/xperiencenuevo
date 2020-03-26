@@ -34,4 +34,7 @@ export class LoginPage {
   onclickMenu(){
     this.navCtrl.push("MenuprincipalPage")
   }
+  onclickRegistro(){
+    this.navCtrl.push("RegistroPage")
+  }
 }

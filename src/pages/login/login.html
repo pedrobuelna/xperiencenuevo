@@ -28,8 +28,8 @@
           <input type="password" class="form__field" placeholder="Contraseña" formControlName="contrasena" name="contrasena" id='contrasena' required [(ngModel)]="contrasenaVal"/>
           <label for="apellidos" class="form__label">Contraseña</label>
         </div>
+        <button ion-button color="light" class="registro" outline (click)="onclickRegistro()">Registarse</button>
       </div>
-     
       <div class="content_btn1">
         <button ion-button color="dark" [disabled]="formgroup.invalid" (click)="onclickMenu()">Login</button>
       </div>

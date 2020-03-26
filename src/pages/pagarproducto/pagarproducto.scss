@@ -1,0 +1,26 @@
+page-pagarproducto {
+    .logo2{margin: 0px auto 0;max-width: 100px;display: block;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;padding-top: 15px;}
+    .margen{padding: 0 40px;box-sizing: border-box;width: 100%;}
+    img[alt="flecha_atras"]{max-width: 28px;position: absolute;left: 40px;top: 50px;}
+    .list{margin-top: 50px;}
+    .item{padding-left: 0;min-height: 115px;}
+    .item-inner{padding: 20px 0 20px 20px;}
+    .descripcion1{color: black;font-size: 19px;}
+    .titulo1{font-size: 14px;}
+    .descripcion1{font-size: 20px;margin: 5px 0;}
+    .titulo2{margin-left: 5px;color: #575755;}
+    .content_controls{height: 100px; border-bottom: 1px solid #c8c7cc; padding: 20px;}
+    .desc_content{float: left; width: 50%;}
+    .control_content{float: right; text-align: right; width: 120px; margin-right: 10px; margin-top: 14px;}
+    .control{max-width: 100px; border: 1px solid black; text-align: center; border-radius: 10px;}
+    .menos{font-size: 15px;}
+    .precio{color: #868686;}
+    input[type="number"]{width: 30px;height: 30px; border: none; text-align: center; font-weight: bold;}
+    .mas{font-size: 15px;}
+    .content_controls .titulo1{margin: 5px 0;}
+    .subtitulo{font-size: 16px;}
+    .black{color: black;}
+    .content_controls.last{height: 150px;padding-top: 50px;border-bottom: none;}
+    .verificar{bottom: 30px;width: 100%;}
+    .verificar button{width: calc(100% - 10px);margin: 0 5px;border-radius: 10px;}
+}
