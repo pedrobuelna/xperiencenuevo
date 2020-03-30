@@ -1,0 +1,345 @@
+<!--
+  Generated template for the PasosreservacionPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>pasosreservacion</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-content>
+  <img src="../../assets/imgs/flecha_atras.png" alt="flecha_atras" (click)="atras()">
+  <img src="../../assets/imgs/logo2.png" alt="logo2" class="logo2">
+  <div class="content_secciones">
+    <div class="margen">
+      <div class="content_separador clearfix">
+        <div class="content_1">
+          <div class="bold titulo1">Paso 1: Revisa la información</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ion-card>
+    <img src="../../assets/imgs/sofa.jpeg">
+    <ion-item>
+      <!-- <ion-avatar item-start>
+        <img src="img/marty-avatar.png">
+      </ion-avatar> -->
+      <h2 class="bold">Superior Suite</h2> <br>
+      <p class="checks_desc">
+        <span class="bold">Check-In:</span> <span class="right">1/Abril/2020</span> <br><br>
+         <span class="bold">Check-Out:</span> <span class="right">3/Abril/2020</span>
+      </p>
+    </ion-item>
+    <ion-card-content>
+      <p text-justify>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, velit vitae rutrum rhoncus, arcu lectus tincidunt quam, nec faucibus orci tellus id mi. Duis pharetra metus sed malesuada tristique. Pellentesque orci elit, venenatis id rhoncus id, consequat ac urna.</p>
+    </ion-card-content>
+      <ion-col text-center>
+        <button ion-button icon-start clear small text-center>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <ion-icon name="star"></ion-icon>
+          <div>4 de 5</div>
+        </button>
+      </ion-col>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="text"></ion-icon>
+          <div>2 Commentarios</div>
+        </button>
+      </ion-col>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          2 Noches, 1 unidad
+        </ion-note>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <div>
+        <span class="nombre">Pedro Buelna</span>
+      </div>
+      <p text-justify>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper, velit vitae rutrum rhoncus, arcu lectus tincidunt quam, nec faucibus orci tellus id mi. Duis pharetra metus sed malesuada tristique. Pellentesque orci elit, venenatis id rhoncus id, consequat ac urna.</p>
+    </ion-row>
+  </ion-card>
+  <button ion-button full color="light">RESUMEN</button>  
+  <div class="margen2">
+    <ion-col>
+      <div>
+        <span class="bold">Habitación</span> <br>
+        <span class="green">Cancelación gratuita</span>
+      </div>
+      <ion-row>
+        <ion-col text-left>
+            <div>Tarifa promedio por noche</div>
+        </ion-col>
+        <ion-col align-self-center text-right>
+            MXN 728.60
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    <div class="separador2"></div>
+    <ion-col>
+      <div>
+        <!-- <span class="bold">Habitación</span> <br>
+        <span class="green">Cancelación gratuita</span> -->
+      </div>
+      <ion-row>
+        <ion-col text-left>
+          <span class="green">2 noches</span>
+        </ion-col>
+        <ion-col align-self-center text-right>
+            MXN 1457.20
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-left>
+          <span>Impuestos y cargos</span>
+        </ion-col>
+        <ion-col align-self-center text-right>
+            MXN 194.98
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </div>
+  <div class="separador2"></div>
+  <div  class="fondo1">
+    <div class="margen2">
+      <ion-row>
+        <ion-col text-left>
+          <div class=""> <span class="bold">!Oferta especial incluida!</span> 35% de descuento</div>
+          <div class="separador2"></div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col text-left col-4>
+          <span class="bold">Precio Total</span>
+        </ion-col>
+        <ion-col align-self-center text-right col-8>
+            <div class="bold precio2">MXN 1,652.18</div>
+            <div class="bold unidad">por 1 unidad, 2 huéspedes, 2 noches</div>
+            <div class="desc1">incluyendo impuestos y cargos</div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+  <div class="separador2"></div>
+  <div class="margen2 desc2" text-justify>Confirmaremos tu reservación hoy y haremos el cobro hoy</div>
+  <div class="separador2"></div>
+  <form action="" [formGroup]="formgroup">
+    <div class="content_secciones">
+      <div class="margen2">
+        <div class="content_separador clearfix">
+          <div class="content_1">
+            <div class="bold titulo1">Paso 2: Tus datos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="margen2">
+      <p class="parrafo1" text-justify>Escribe el nombre del huesped que se alojara en el establecimiento tal como aparece en la identificacion que mostrara el check-in. si la persona tiene mas de un apellido ingresalos todos.</p>
+    </div>
+    <div class="content_inputs">
+      <div class="form__group field">
+        <input type="text" class="form__field" placeholder="Nombre" formControlName="nombre"  name="nombre" id='nombre' required [(ngModel)]="nombreVal"/>
+        <label for="nombre" class="form__label">Nombre</label>
+      </div>
+      <div class="form__group field">
+        <input type="text" class="form__field" placeholder="Apellidos" formControlName="apellidos" name="apellidos" id='apellidos' required [(ngModel)]="apellidosVal"/>
+        <label for="apellidos" class="form__label">Apellidos</label>
+      </div>
+      <div class="form__group field">
+        <input type="email" class="form__field" placeholder="Correo Electrónico" formControlName="correo"  name="correo" id='correo' required [(ngModel)]="correoVal"/>
+        <label for="correo" class="form__label">Correo Electrónico</label>
+      </div>
+      <div class="form__group field">
+        <input type="date" class="form__field" placeholder="Fecha de nacimiento" formControlName="fechaNacimiento" name="fechaNacimiento" id='fechaNacimiento' required [(ngModel)]="fechaNacimientoVal"/>
+        <label for="fechaNacimiento" class="form__label">Fecha de Nacimiento</label>
+      </div>
+      <div class="form__group field">
+        <input type="number" class="form__field" placeholder="celular" formControlName="celular" name="celular" id='celular' required [(ngModel)]="celularVal"/>
+        <label for="celular" class="form__label">Numero de Celular</label>
+      </div>
+      <div class="form__group field">
+        <label for="contactChoice1" class="form__label">Elegir Llave</label> <br>
+        <input type="radio" id="contactChoice1" name="llave" value="1" formControlName="llave" [(ngModel)]="llaveVal">
+        <label for="contactChoice1">Llave Fisica</label>
+        <input type="radio" id="contactChoice2" name="llave" value="2" formControlName="llave" [(ngModel)]="llaveVal">
+        <label for="contactChoice2">Llave Digital</label>
+      </div>
+    </div>
+    <div class="content_secciones">
+      <div class="margen2">
+        <div class="content_separador clearfix">
+          <div class="content_1">
+            <div class="bold titulo1">Paso 3: Información de la propiedad</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="margen2">
+      <div class="background1">
+        <p><span class="font12 bold">Tu unidad cuenta con: </span><span class="green">1 cama Queen size y 1 sofá cama, No fumar</span></p>
+      </div>
+    </div>
+    <div class="content_secciones">
+      <div class="margen2">
+        <div class="content_separador clearfix">
+          <div class="content_1">
+            <div class="bold titulo1">Paso 4: Detalles de pago</div> <br>
+            Tu reservación se hace a través de un metodo seguro
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="apurate">
+      Apurate, esta es la unidad mas barata en superior suite! Reserva ya.
+    </div>
+    <div class="margen2">
+      <p><span class="bold">No cobramos comisiones</span> por pagar con tarjeta de crédito</p>
+    </div>
+    <div *ngIf="metodo == 1">
+      <div class="content_inputs">
+        <div class="form__group field">
+          <input type="text" class="form__field" placeholder="Nombre del titular" formControlName="nombreTitular"  name="nombreTitular" id='nombreTitular' required [(ngModel)]="nombreTitularVal"/>
+          <label for="nombre" class="form__label">Nombre del titular de la tarjeta</label>
+        </div>
+        <!-- <div class="form__group field">
+          <input type="text" class="form__field" placeholder="Nombre del banco" formControlName="nombreBanco" name="nombreBanco" id='nombreBanco' required [(ngModel)]="nombreBancoVal"/>
+          <label for="nombreBanco" class="form__label">nombreBanco</label>
+        </div> -->
+        <div class="form__group field">
+          <select name="metodoPago" id="metodoPago"  class="form__field">
+            <option value="1">Tarjeta de Débito</option>
+            <option value="2">Tarjeta de Crédito</option>
+          </select>
+          <label for="metodoPago" class="form__label">Método de pago</label>
+        </div>
+        <div class="form__group field">
+          <input type="number" class="form__field" placeholder="Numero de tarjeta" formControlName="numeroTarjeta"  name="numeroTarjeta" id='numeroTarjeta' required [(ngModel)]="numeroTarjetaVal"/>
+          <label for="numeroTarjeta" class="form__label">Numero de tarjeta</label>
+        </div>
+        <ul class="card_logos">
+          <li class="card_visa">Visa</li>
+          <li class="card_mastercard">Mastercard</li>
+          <li class="card_amex">American Express</li>
+          <li class="card_discover">Discover</li>
+          <li class="card_jcb">JCB</li>
+          <li class="card_diners">Diners Club</li>
+        </ul>
+        <div class="form__group field">
+          <input type="date" class="form__field" placeholder="Fecha de Vencimiento" formControlName="fechaVencimiento" name="fechaVencimiento" id='fechaVencimiento' required [(ngModel)]="fechaVencimientoVal"/>
+          <label for="fechaVencimiento" class="form__label">Fecha de Vencimiento</label>
+        </div>
+        <div class="form__group field">
+          <input type="number" class="form__field" placeholder="cvv" formControlName="cvv" name="cvv" id='cvv' required [(ngModel)]="cvvVal"/>
+          <label for="celular" class="form__label">CVV</label>
+        </div>
+        <div class="margen2">
+          <div class="form__group field">
+            <label for="terminos" class="form__label">Acepto los terminos y condiciones</label>
+            <input type="checkbox" id="terminos" name="terminos" value="1">
+          </div>
+          <div class="form__group field">
+            <label for="guardarMetodo" class="form__label">Quiero guardar este método de pago</label>
+            <input type="checkbox" id="guardarMetodo" name="guardarMetodo" value="2">
+          </div>
+          <div class="bold">Forma de pago</div>
+          <div class="form__group field">
+            <label for="contactChoice1" class="form__label">Elegir Llave</label> <br>
+            <input type="radio" id="contactChoice1" name="llave" value="1" formControlName="llave" [(ngModel)]="llaveVal">
+            <label for="contactChoice1">Llave Fisica</label>
+            <input type="radio" id="contactChoice2" name="llave" value="2" formControlName="llave" [(ngModel)]="llaveVal">
+            <label for="contactChoice2">Llave Digital</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="metodo != 1">
+      <div class="form__group field">
+        <select name="metodoPago" id="metodoPago"  class="form__field">
+          <option value="1">MasterCard (5459)</option>
+          <option value="2">VISA (4931)</option>
+        </select>
+        <label for="metodoPago" class="form__label">Tarjeta guardada</label>
+        <div class="terminacion">Mastercard que termina en 5459</div>
+      </div>
+      
+      <div class="form__group field">
+        <input type="number" class="form__field" placeholder="cvv" formControlName="cvv" name="cvv" id='cvv' required [(ngModel)]="cvvVal"/>
+        <label for="celular" class="form__label">Código de seguridad</label>
+      </div>
+      <div class="pago margen2">
+        <div class="form__group field">
+          <label class="form__label">Forma de pago</label> <br>
+          <input type="radio" id="pago" name="pago" value="1" checked>
+          <label for="pago">1 pago de 1652.18</label> <br> <br>
+          <input type="radio" id="pago2" name="pago" value="2" >
+          <label for="pago2">3 meses de MXN 550.73</label>
+        </div>
+      </div>
+      <div class="margen2">
+        <div class="bold">Hasta en 18 meses sin intereses</div><br>
+        <p text-justify>
+          Paga hasta en 18 meses sin intereses con tu tarjeta de credito. Ingresa el numero de tarjeta o elige una que ya
+          hayas guardado para ver que opciones tienes. Válido para tarjetas Citibanamex, Bancomer, Banorte <br> <br>
+          Aceptamos tarjetas de crédito y débito de todos los bancos en pagos sin mensualidades.
+        </p>
+    </div>
+    </div>
+    <div class="content_secciones">
+      <div class="margen2">
+        <div class="content_separador clearfix">
+          <div class="content_1">
+            <div class="bold titulo1">Política de cancelación</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="margen2">
+      <br>
+      <div class="bold">Cancelación sin costo hasta el 20/04/2020</div><br>
+      <p class="parrafo1">
+        Deberás pagar los siguientes cargos en el establecimiento:<br> <br>
+        Depósito: USD 75.00 por noche <br>
+        Cargo del resort USD 33 por hospedaje, por noche <br> <br>
+        El cargo del establecimiento incluye:
+        Acceso a la alberca <br>
+        Acceso a la sala de fitness <br>
+        Servicio de traslado<br>
+        Acceso a internet<br>
+        Llamadas telefónicas<br> <br>
+        Aunque se incluyeron todos los cargos que proporcionó el establecimiento, estos pueden variar por ejemplo,
+        dependiendo de la duración de la estancia o del tipo de habitación reservada.
+      </p>
+      <div class="separador2"></div>
+      <div class="bold">Términos de la reservación</div> <br>
+      <p class="parrafo1">
+        Al hacer clic en "Reservar", reconoces que leiste y aceptas nuestros <span class="terminos" (click)="terminos()"> Terminos y condiciones</span>
+        y nuestra <span class="privacidad" (click)="privacidad()">Política de privacidad</span> <br><br>
+        Este pago se procesará en México.
+      </p>
+      <div class="separador2"></div>
+    </div>
+    <div class="margen2 clearfix">
+      <p class="checks_desc">
+        <span>Check-In:</span> <span class="bold right">1/Abril/2020</span> <br><br>
+         <span>Check-Out:</span> <span class="bold right">3/Abril/2020</span>
+      </p>
+      <div class="cantidad_noches">
+        2 noches, 1 unidad
+      </div>
+    </div>
+    
+    <div class="content_btn1">
+      <button ion-button color="dark" [disabled]="formgroup.invalid" (click)="onclickMenu()">Reservar</button>
+    </div>
+    <div class="bold" text-center>Ya casi terminas! Este es el ultimo paso.</div>
+    <div class="separador2"></div>
+  </form>
+ </ion-content>

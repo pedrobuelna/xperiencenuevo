@@ -32,6 +32,7 @@ export class LoginPage {
     console.log('ionViewDidLoad LoginPage');
   }
   onclickMenu(){
+    localStorage.setItem("usuario", "1");
     this.navCtrl.push("MenuprincipalPage")
   }
   onclickRegistro(){

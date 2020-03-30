@@ -35,5 +35,8 @@ export class HomePage {
   onclickLogin(){
     this.navCtrl.push("LoginPage")
   }
+  onclickPageCalendario(){
+    this.navCtrl.push("CalendarioPage")
+  }
   
 }

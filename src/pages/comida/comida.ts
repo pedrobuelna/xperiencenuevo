@@ -30,6 +30,7 @@ export class ComidaPage {
   onclickCompraproducto(){
     this.navCtrl.push("CompraproductoPage")
   }
+  
    scrolling(event) {
     // your content here for scrolling
     if(event){

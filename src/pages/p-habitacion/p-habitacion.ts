@@ -122,40 +122,49 @@ export class PHabitacionPage {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion1').addClass('selected');
         menuScrollxVAR.scrollTo(0, 0, 0);
+        $(".verificar .precio").html($("#habitacion1 .precio").html())
       } else if(event.scrollTop >= habitacion2VAR && event.scrollTop < habitacion3VAR) {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion2').addClass('selected');
         menuScrollxVAR.scrollTo(habitacion2Menu, 0, 0);
+        $(".verificar .precio").html($("#habitacion2 .precio").html())
         console.log(habitacion2Menu);
+        
       } else if(event.scrollTop >= habitacion3VAR && event.scrollTop < habitacion4VAR) {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion3').addClass('selected');
         menuScrollxVAR.scrollTo(habitacion3Menu, 0, 0);
+        $(".verificar .precio").html($("#habitacion3 .precio").html())
         console.log(habitacion3Menu);
       } else if(event.scrollTop >= habitacion4VAR && event.scrollTop < habitacion5VAR) {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion4').addClass('selected');
         menuScrollxVAR.scrollTo(habitacion4Menu, 0, 0);
+        $(".verificar .precio").html($("#habitacion4 .precio").html())
         console.log(habitacion4Menu);
       } else if(event.scrollTop >= habitacion5VAR && event.scrollTop < habitacion6VAR) {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion5').addClass('selected');
         menuScrollxVAR.scrollTo(habitacion5Menu, 0, 0);
+        $(".verificar .precio").html($("#habitacion5 .precio").html())
         console.log(habitacion5Menu);
       } else if(event.scrollTop >= habitacion6VAR && event.scrollTop < habitacion7VAR) {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion6').addClass('selected');
         menuScrollxVAR.scrollTo(habitacion6Menu, 0, 0);
+        $(".verificar .precio").html($("#habitacion6 .precio").html())
         console.log(habitacion6Menu);
       } else if(event.scrollTop >= habitacion7VAR && event.scrollTop < habitacion8VAR) {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion7').addClass('selected');
         menuScrollxVAR.scrollTo(habitacion7Menu, 0, 0);
+        $(".verificar .precio").html($("#habitacion7 .precio").html())
         console.log(habitacion7Menu);
       } else if(event.scrollTop >= habitacion8VAR) {
         $('.habitacionLess').removeClass('selected');
         $('.habitacion8').addClass('selected');
         menuScrollxVAR.scrollTo(habitacion8Menu, 0, 0);
+        $(".verificar .precio").html($("#habitacion8 .precio").html())
         console.log(habitacion8Menu);
       }
 
@@ -165,7 +174,6 @@ export class PHabitacionPage {
         verificarVAR.classList.remove('active')
       }
     }
-    
   }
 
   scrollComplete(event) {

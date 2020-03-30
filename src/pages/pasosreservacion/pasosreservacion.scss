@@ -1,0 +1,112 @@
+page-pasosreservacion {
+    .fixed_menu{background-color: white;width: 100%;}
+    .logo2{margin: 0px auto 0;max-width: 100px;display: block;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;padding-top: 15px;}
+    .margen{padding: 0 40px;box-sizing: border-box;width: 100%;}
+    img[alt="flecha_atras"]{max-width: 28px;position: absolute;left: 40px;top: 50px;}
+    .content_titulo_desc{margin: 20px 0 15px;width: 100%;}
+    .content_secciones{background: #ededed;padding: 15px 0;margin-top: 30px;}
+    .content_titulo_desc .titulo1{margin-bottom: 20px;}
+    .clearfix{overflow: auto;}
+    .content_1{float: left;}
+    .content_2{float: right;background: black;color: white;padding: 10px 20px;border-radius: 9px;margin-top: 3px;}
+    p{margin: 5px 0;}
+    .content_checkbox{margin-top: 30px;}
+    .container{display: block;position: relative;padding-left: 35px;margin-bottom: 32px;cursor: pointer;font-size: 16px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+  
+    .cantidad{background: white; color: black; width: 25px; height: 25px; text-align: center; line-height: 25px; border-radius: 50%; position: absolute; left: 20px;}
+    .precio{position: absolute; right: 20px; font-size: 15px;}
+    .content_pagar{text-align: right;}
+    .total{font-size: 20px;}
+    .content_pagar .descripcion1{margin: 10px 0;}
+    .separador{border-top: 1px solid black;position: relative;margin: 50px 0;}
+    .separador > span{position: absolute; top: -16px; background: black; color: white; border-radius: 50%; width: 30px; height: 30px; text-align: center; line-height: 30px; left: calc(50% - 15px); }
+    .checks_desc{color: black;}
+    .card button{color: black !important;}
+    .button{background-color: #e0e0e0 !important;margin-bottom: 25px;}
+    .green{font-size: 13px;color: #517839;margin: 5px 0;display: inline-block;}
+    .margen2{margin: 0 20px;}
+    .margen2 .col{padding: 0;}
+    .separador2{border-bottom: 1px solid #cacaca;width: 100%;margin: 20px 0;}
+    .fondo1{background-color: #d7d6d3;border-top: 1px solid #cacaca; padding: 20px 0; border-bottom: 1px solid #cacaca;}
+    .precio2{font-size: 18px;}
+    .unidad{margin: 5px 0;font-size: 12px;}
+    .desc1{color: #666;}
+    .desc2{color: #666;font-size: 12px;}
+    .parrafo1{color: #666;font-size: 14px;}
+    .form__group{position: relative; padding: 15px 0 20px; margin-top: 10px; }
+    .form__field{font-family: inherit; width: 100%; border: 0; border-bottom: 1px solid #d1d1d1; outline: 0; padding-left: 20px !important; font-size: 1.3rem; padding: 7px 0; background: transparent; transition: border-color 0.2s; -webkit-appearance: none;
+        &::placeholder {
+            color: transparent;
+        }
+        &:placeholder-shown ~ .form__label {
+            font-size: 1.3rem;
+            cursor: text;
+            top: 0px;
+        }
+    }
+    .form__label{position: absolute; top: 0; left: 20px; display: block; transition: 0.2s; font-size: 1.3rem;font-weight:700; }
+    .form__field:focus {
+        ~ .form__label {position: absolute; top: 0px; display: block; transition: 0.2s; font-size: 1.3rem; }
+    }
+    /* reset input */
+    .form__field{
+        &:required,&:invalid{box-shadow:none;}
+    }
+    .input{width: 100%;border-radius: 0;height: 40px;border: 0;}
+    //.button{border-radius: 10px;font-weight:bold;height: 50px;font-size: 2rem;min-width: 223px;margin-bottom: 50px;}
+    .content_btn1{margin-top: 20px;}
+    .content_btn1 .button{background-color: black !important;margin-bottom: 25px;}
+    input[id="contactChoice1"]{margin-left: 20px;}
+    .font12{font-size: 12px;}
+    .background1 .green{display: inline;}
+    .background1{background: #d7d6d3; padding: 5px 10px; margin-top: 30px;}
+    .apurate{padding: 10px; border: 1px solid #b3b2b0; border-radius: 4px; margin: 0 20px 20px; background: #d1e0a7; color: #406340;}
+    ul.card_logos {
+        display: inline-block;
+        margin: 0 0 0 10px;
+        padding: 0;
+    }
+    
+    .card_visa, .card_mastercard, .card_amex, .card_discover, .card_diners, .card_jcb {
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        overflow: hidden;
+        text-align: left;
+        text-indent: -999px;
+        background: url(../../assets/imgs/sprite-cards.png) 0 0 no-repeat;
+    }
+    
+    .card_mastercard {
+        background-position: -55px 0;
+    }
+    
+    .card_amex {
+        background-position: -110px 0;
+    }
+    
+    .card_discover {
+        background-position: -165px 0;
+    }
+    
+    .card_diners {
+        background-position: -220px 0;
+    }
+    
+    .card_jcb {
+        background-position: -660px 0;
+    }
+    
+    .is_visa li, .is_mastercard li, .is_amex li, .is_discover li, .is_diners li, .is_jcb li, .is_nothing li {
+        opacity: .2;
+    }
+    
+    .is_visa li.card_visa, .is_mastercard li.card_mastercard, .is_amex li.card_amex, .is_discover li.card_discover, .is_diners li.card_diners, .is_jcb li.card_jcb {
+        opacity: 1;
+    }
+    .terminacion{margin-left: 20px;margin-top: 10px;font-size: 12px;}
+   .pago .form__label{left: 0;}
+   .terminos,.privacidad{text-decoration: underline;color: cornflowerblue;}
+   .cantidad_noches{border: 1px solid green; border-radius: 3px; display: inline; padding: 5px 10px;float: right;margin-top: 15px;}
+   .right{float: right;}
+}

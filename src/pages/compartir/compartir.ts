@@ -38,6 +38,26 @@ export class CompartirPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CompartirPage');
+    $(".field  > img:nth-child(1)").click(function(){
+      $(".field  > img").attr("src","../../assets/imgs/estrelladesactivada.png")
+      $(this).attr("src","../../assets/imgs/estrellaactiva.png")
+    })
+    $(".field  > img:nth-child(2)").click(function(){
+      $(".field  > img").attr("src","../../assets/imgs/estrelladesactivada.png")
+      $(".field  > img:nth-child(1),.field  > img:nth-child(2)").attr("src","../../assets/imgs/estrellaactiva.png")
+    })
+    $(".field  > img:nth-child(3)").click(function(){
+      $(".field  > img").attr("src","../../assets/imgs/estrelladesactivada.png")
+      $(".field  > img:nth-child(1),.field  > img:nth-child(2),.field  > img:nth-child(3)").attr("src","../../assets/imgs/estrellaactiva.png")
+    })
+    $(".field  > img:nth-child(4)").click(function(){
+      $(".field  > img").attr("src","../../assets/imgs/estrelladesactivada.png")
+      $(".field  > img:nth-child(1),.field  > img:nth-child(2),.field  > img:nth-child(3),.field  > img:nth-child(4)").attr("src","../../assets/imgs/estrellaactiva.png")
+    })
+    $(".field  > img:nth-child(5)").click(function(){
+      $(".field  > img").attr("src","../../assets/imgs/estrelladesactivada.png")
+      $(".field  > img:nth-child(1),.field  > img:nth-child(2),.field  > img:nth-child(3),.field  > img:nth-child(4),.field  > img:nth-child(5)").attr("src","../../assets/imgs/estrellaactiva.png")
+    })
   }
 
 }

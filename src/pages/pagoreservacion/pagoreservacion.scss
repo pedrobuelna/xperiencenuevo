@@ -1,0 +1,23 @@
+page-pagoreservacion {
+    .fixed_menu{background-color: white;width: 100%;}
+    .logo2{margin: 0px auto 0;max-width: 100px;display: block;-webkit-transition: all 0.3s ease;transition: all 0.3s ease;padding-top: 15px;}
+    .margen{padding: 0 40px;box-sizing: border-box;width: 100%;}
+    img[alt="flecha_atras"]{max-width: 28px;position: absolute;left: 40px;top: 50px;}
+    .content_titulo_desc{margin: 20px 0 15px;width: 100%;}
+    .content_secciones{background: #ededed;padding: 15px 0;margin-top: 30px;}
+    .content_titulo_desc .titulo1{margin-bottom: 20px;}
+    .clearfix{overflow: auto;}
+    .content_1{float: left;}
+    .content_2{float: right;background: black;color: white;padding: 10px 20px;border-radius: 9px;margin-top: 3px;}
+    p{margin: 5px 0;}
+    .content_checkbox{margin-top: 30px;}
+    .container{display: block;position: relative;padding-left: 35px;margin-bottom: 32px;cursor: pointer;font-size: 16px;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+  
+    .cantidad{background: white; color: black; width: 25px; height: 25px; text-align: center; line-height: 25px; border-radius: 50%; position: absolute; left: 20px;}
+    .precio{position: absolute; right: 20px; font-size: 15px;}
+    .content_pagar{text-align: right;}
+    .total{font-size: 20px;}
+    .content_pagar .descripcion1{margin: 10px 0;}
+    .separador{border-top: 1px solid black;position: relative;margin: 50px 0;}
+    .separador > span{position: absolute; top: -16px; background: black; color: white; border-radius: 50%; width: 30px; height: 30px; text-align: center; line-height: 30px; left: calc(50% - 15px); }
+}

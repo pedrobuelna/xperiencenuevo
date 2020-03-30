@@ -41,5 +41,7 @@ export class PagarproductoPage {
   atras(){
     this.navCtrl.pop()
   }
-  
+  onclickPagarproducto(){
+    this.navCtrl.push("PagoreservacionPage")
+  }
 }

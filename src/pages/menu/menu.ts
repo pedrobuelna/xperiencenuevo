@@ -36,4 +36,7 @@ ionViewDidLoad() {
   onclickLogin(){
     this.navCtrl.push("LoginPage")
   }
+  onclickCompartir(){
+    this.navCtrl.push("CompartirPage")
+  }
 }

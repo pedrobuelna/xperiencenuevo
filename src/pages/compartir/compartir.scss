@@ -14,7 +14,8 @@ page-compartir {
     .parrafo1{text-align: justify;}
     .title1{margin-top: 40px !important;}
     .content_input{position: relative;}
-    .estrellas{margin-left: 16px;width: 100px;margin-top: 5px;}
+    .estrellas{margin-left: 0px;width: 20px;margin-top: 5px;}
+    .form__group.field  > img:nth-child(1){margin-left: 15px;}
     $primary: #11998e;
     $secondary: #38ef7d;
     $white: #fff;
