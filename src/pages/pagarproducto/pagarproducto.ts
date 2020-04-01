@@ -14,26 +14,36 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pagarproducto.html',
 })
 export class PagarproductoPage {
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
-
+  onclickPagoreservacion(){
+    this.navCtrl.push("PasosreservacionPage")
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad PagarproductoPage');
-    var numero = 
+    var total = $(".totalInput").val();
+    var total2 = $(".totalInput2").val();
+    var total3 = 0;
     $(".content_controls").find(".menos").click(function(){
       var numero = $(this).next().val()
-      //console.log($(this).next().val(numero))
+      console.log(numero)
       if(numero >= 2){
         numero--;
+        setTimeout(function(){
+          total3 = ($("#numero1").val() *  total) + ($("#numero2").val() *  total2)
+          $(".precio.black").html("$"+total3.toFixed(2));  
+        },100)
       }
       $(this).next().val(numero)
     })
     $(".content_controls").find(".mas").click(function(){
-      var numero =$(this).prev().val() 
-      //console.log($(this).prev().val(numero))
+      var numero =$(this).prev().val()
       if(numero <= 9){
         numero++;
+        setTimeout(function(){
+          total3 = ($("#numero1").val() *  total) + ($("#numero2").val() *  total2)
+          $(".precio.black").html("$"+total3.toFixed(2));
+        },100)
       }
       $(this).prev().val(numero)
     })

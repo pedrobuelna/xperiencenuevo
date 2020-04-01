@@ -1548,7 +1548,7 @@
       <a class="menu1">CONTACTO</a>
     </li>
     <li>
-      <img src="../../assets/imgs/icono_menu.png" alt="home">
+      <img src="../../assets/imgs/icono_menu.png" alt="home" (click)="onclickHome()">
       <a class="menu1">XPERIENCE</a>
     </li>
     <li>
@@ -1557,12 +1557,12 @@
     </li>
     <li>
       <img src="../../assets/imgs/perfil_menu.png" alt="perfil" (click)="onclickRegistro()">
-      <a class="menu1">PERFIL</a>
+      <a class="menu1">REGISTRO</a>
     </li>
   </ul>
 </div>
-  <div #verificar class="verificar" padding ion-fixed>
+  <div #verificar class="verificar" padding ion-fixed >
     <label class="precio">$2,999.00 /</label>
-    <button ion-button color="dark" (click)="onclickCalendario()">RESERVAR</button>
+    <button ion-button color="dark">RESERVAR</button>
   </div>
 </ion-content>

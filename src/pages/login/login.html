@@ -16,7 +16,7 @@
   </div>
   <div class="content_info_personal">
     <div padding>
-      <h3 class="bold title1">Login</h3>
+      <h3 class="bold title1">Login{{login}}</h3>
     </div>
     <form action="" [formGroup]="formgroup">
       <div class="content_inputs">
@@ -47,7 +47,7 @@
         <a class="menu1">CONTACTO</a>
       </li>
       <li>
-        <img src="../../assets/imgs/icono_menu.png" alt="home" (click)="onclickMenu()">
+        <img src="../../assets/imgs/icono_menu.png" alt="home">
         <a class="menu1">XPERIENCE</a>
       </li>
       <li>
@@ -55,8 +55,8 @@
         <a class="menu1">RESERVA</a>
       </li>
       <li>
-        <img src="../../assets/imgs/perfil_menu.png" alt="perfil">
-        <a class="menu1">PERFIL</a>
+        <img src="../../assets/imgs/perfil_menu.png" alt="perfil" (click)="onclickRegistro()">
+        <a class="menu1" >REGISTRO</a>
       </li>
     </ul>
   </div>

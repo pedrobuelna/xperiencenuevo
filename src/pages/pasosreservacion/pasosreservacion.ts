@@ -25,8 +25,13 @@ export class PasosreservacionPage {
   numeroTarjeta:AbstractControl;
   fechaVencimiento:AbstractControl;
   cvv:AbstractControl;
-  
-  public metodo: number = 0;
+  public nombreVal: string = 'Ronaldo';
+  public apellidosVal: string = 'Nazario';
+  public correoVal: string = 'pedrobuelna@gmail.com';
+  public fechaNacimientoVal: string = "1976-06-22";
+  public celularVal: string = '6692124276';
+  public metodo: number = 1;
+  public metodo2: number = 2;
   constructor(public navCtrl: NavController, public navParams: NavParams,public formbuilder:FormBuilder, public modalCtrl: ModalController) {
     this.formgroup = formbuilder.group({
       //nombre:['',[Validators.required,Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$')]],
@@ -35,7 +40,7 @@ export class PasosreservacionPage {
       correo:['',[Validators.required,Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$')]],
       fechaNacimiento:['',[Validators.required,Validators.minLength(10)]],
       celular:['',[Validators.required,Validators.minLength(10)]],
-      llave: [null, Validators.required],
+      
       nombreTitular:['',[Validators.required,Validators.minLength(10)]],
       numeroTarjeta:['',[Validators.required,Validators.minLength(16)]],
       fechaVencimiento:['',[Validators.required,Validators.minLength(10)]],
@@ -47,7 +52,7 @@ export class PasosreservacionPage {
     this.correo = this.formgroup.controls["correoVal"];
     this.fechaNacimiento = this.formgroup.controls["fechaNacimientoVal"];
     this.celular = this.formgroup.controls["celularVal"]; 
-    this.llave = this.formgroup.controls["llaveVal"]; 
+    
     this.nombreTitular = this.formgroup.controls["nombreTitularVal"]; 
     this.numeroTarjeta = this.formgroup.controls["numeroTarjetaVal"]; 
     this.fechaVencimiento = this.formgroup.controls["fechaVencimientoVal"]; 
@@ -64,7 +69,14 @@ export class PasosreservacionPage {
     let contactModal = this.modalCtrl.create("PrivacidadPage");
     contactModal.present();
   }
+  onclickReservaciones(){
+    this.navCtrl.push("ReservacionesPage")
+  }
   ionViewDidLoad() {
+  
+    $( ".comentarios" ).click(function() {
+      $( ".content_comentarios" ).slideToggle();
+    });
     $.fn.creditCardTypeDetector = function( options ) {
       var settings = $.extend( {
           'credit_card_logos_id': '.card_logos'

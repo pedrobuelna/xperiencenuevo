@@ -1,6 +1,7 @@
 import { Component, ViewChild, Inject } from '@angular/core';
 import { IonicPage, NavController, NavParams, Slides, Content ,ModalController} from 'ionic-angular';
 import { ActividadesPage } from '../../pages/actividades/actividades';
+import { HomePage } from '../home/home';
 /**
  * Generated class for the PHabitacionPage page.
  *
@@ -178,6 +179,9 @@ export class PHabitacionPage {
 
   scrollComplete(event) {
     // your content here of scroll is finished
+  }
+  onclickHome(){
+    this.navCtrl.push(HomePage)
   }
   onclickMenu(){
     this.navCtrl.push("MenuprincipalPage")

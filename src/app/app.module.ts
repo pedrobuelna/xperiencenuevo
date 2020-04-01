@@ -14,7 +14,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ActividadesPage } from '../pages/actividades/actividades';
 import { LlavesPage } from '../pages/llaves/llaves';
 import { ReservaPage } from '../pages/reserva/reserva';
-import { PHabitacionPage } from '../pages/p-habitacion/p-habitacion';
+//import { PHabitacionPage } from '../pages/p-habitacion/p-habitacion';
+import { GlobalvarsProvider } from '../providers/globalvars/globalvars';
+import { DataProvider } from '../providers/data/data';
+
 //import { LoginPage } from '../pages/login/login';
 
 @NgModule({
@@ -54,7 +57,9 @@ import { PHabitacionPage } from '../pages/p-habitacion/p-habitacion';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    GlobalvarsProvider,
+    DataProvider
   ]
 })
 export class AppModule {}

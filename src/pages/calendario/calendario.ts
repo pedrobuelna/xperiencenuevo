@@ -16,9 +16,9 @@ import { DatepickerHelperProvider } from './../../providers/datepicker-helper/da
 })
 export class CalendarioPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController,public viewCtrl: ViewController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, 
+    public modalCtrl: ModalController,public viewCtrl: ViewController) {
   }
-  
   ionViewDidLoad() {
     console.log('ionViewDidLoad CalendarioPage');
     $('#datepicker').datepicker({

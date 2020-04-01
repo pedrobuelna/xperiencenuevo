@@ -33,12 +33,14 @@
       <div class="desc_content">
         <div class="bold titulo1">Royal Burguer</div>
         <div class="bold precio">$180.00</div>
+        <input type="hidden" value="180.00" class="totalInput">
       </div>
       <div class="control_content">
         <div class="control">
           <span class="bold menos" attr="el1">-</span>
           <input type="number" value="1" min="1" id="numero1">
           <span class="bold mas" attr="el1">+</span>
+          <input type="hidden" value="0" class="totalInput2">
         </div>
       </div>
     </div>
@@ -67,7 +69,7 @@
     </div>
   </ion-list>
   <div class="verificar" ion-fixed>
-    <button ion-button color="dark" (click)="onclickPagarproducto()">
+    <button ion-button color="dark" (click)="onclickPagoreservacion()">
       <span class="bold">PAGAR</span>
     </button>
   </div>

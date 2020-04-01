@@ -59,8 +59,9 @@ page-pasosreservacion {
     input[id="contactChoice1"]{margin-left: 20px;}
     .font12{font-size: 12px;}
     .background1 .green{display: inline;}
-    .background1{background: #d7d6d3; padding: 5px 10px; margin-top: 30px;}
-    .apurate{padding: 10px; border: 1px solid #b3b2b0; border-radius: 4px; margin: 0 20px 20px; background: #d1e0a7; color: #406340;}
+    .paso2{margin-bottom: 20px;}
+    .background1{background: #d7d6d3; padding: 5px 10px; margin-top: 20px;}
+    .apurate{padding: 10px; border: 1px solid #b3b2b0; border-radius: 4px; margin: 25px 20px 20px; background: #d1e0a7; color: #406340;}
     ul.card_logos {
         display: inline-block;
         margin: 0 0 0 10px;
@@ -109,4 +110,6 @@ page-pasosreservacion {
    .terminos,.privacidad{text-decoration: underline;color: cornflowerblue;}
    .cantidad_noches{border: 1px solid green; border-radius: 3px; display: inline; padding: 5px 10px;float: right;margin-top: 15px;}
    .right{float: right;}
+   .content_comentarios .row{margin-bottom: 30px;}
+   //.content_comentarios .row:first-child{margin-bottom: 0px;}
 }

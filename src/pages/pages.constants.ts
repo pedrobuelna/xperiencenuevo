@@ -1,0 +1,13 @@
+//Constants for getting type references
+export const REGISTRO_PAGE = 'RegistroPage';
+export const LOGIN_PAGE = 'LoginPage';
+export const PEDIDO_NUEVO = 'PedidoPage';
+export const DIRECCIONES_PAGE = 'DireccionesPage';
+export const DIRECCION_PAGE = 'DireccionPage';
+export const MISDATOS_PAGE = 'MisdatosPage';
+export const PEDIDOS_PAGE = 'PedidosPage';
+export const GRAFICAS_PAGE = 'GraficasPage';
+export const ALERTAS_PAGE = 'AlertasPage';
+export const OLVIDECONTRASENA_PAGE = 'OlvideContrasenaPage'
+export const PREFERENCIAS_PAGE = 'PreferenciasPage'
+//export const CALENDARIO_PAGE = 'CalendarioPage'

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { DataProvider } from '../../providers/data/data'
+import { HomePage } from '../home/home';
 /**
  * Generated class for the MenuPage page.
  *
@@ -15,11 +16,21 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class MenuPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public dataP: DataProvider) {
   }
 
 ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
+    if(this.dataP.dataX == 0){
+      this.navCtrl.push("LoginPage")
+    }else if(this.dataP.dataX = 2){
+      
+    }
+  }
+  onclickCerrarsesion(){
+    this.dataP.dataX = 0;
+    this.navCtrl.setRoot(HomePage)
   }
   onclickActividades(){
     this.navCtrl.push("ActividadesPage")

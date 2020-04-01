@@ -31,7 +31,9 @@ export class ListadoroomservicePage {
   goTo(habitacion) {
     this.content.scrollTo(0, $('#'+habitacion).offset().top+this.content.scrollTop+1, 500);
   }
-
+  onclickPagarproducto(){
+      this.navCtrl.push("CompraproductoPage")
+  }
   scrolling(event) {
     // your content here for scrolling
     if(event){
