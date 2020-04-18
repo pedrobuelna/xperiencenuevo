@@ -32,6 +32,9 @@ export class PlayasPage {
   onclickMenu(){
     this.navCtrl.push("MenuprincipalPage")
   }
+  onclickPerfil(){
+    this.navCtrl.push("EditarinfopersonalPage")
+  }
   onclickContact(){
     this.navCtrl.push("ContactoPage")
   }

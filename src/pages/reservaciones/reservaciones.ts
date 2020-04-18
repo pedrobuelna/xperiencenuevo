@@ -21,5 +21,7 @@ export class ReservacionesPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad ReservacionesPage');
   }
-
+  atras(){
+    this.navCtrl.pop
+  }
 }

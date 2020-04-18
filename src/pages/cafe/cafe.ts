@@ -79,6 +79,9 @@ export class CafePage {
       selectedd5.classList.add('selected')
     }
   }
+  onclickListadoroomservice(){
+    this.navCtrl.push("ListadoroomservicePage")
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad CafePage');
   }

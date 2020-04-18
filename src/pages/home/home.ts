@@ -22,7 +22,6 @@ export class HomePage {
   }
   ionViewDidLoad() {
     //$("body").find(".tabbar").addClass("none")
-
   }
   
   onclickPageReserva(){
@@ -34,7 +33,7 @@ export class HomePage {
     this.navCtrl.push("HabitacionPage")
   }
   onclickLogin(){
-    this.navCtrl.push("ReservacionPage")
+    this.navCtrl.push("LoginPage")
   }
   onclickPageCalendario(){
     this.navCtrl.push("CalendarioPage")

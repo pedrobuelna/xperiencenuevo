@@ -20,9 +20,13 @@ export class ParkingPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ParkingPage');
+    
   }
-  
+  ionViewCanLeave() {
+    return false;
+  }
   onclickPedirAuto() {
+    var tiempo_corriendo = null;
     const confirm = this.alertCtrl.create({
       title: 'PEDIR AUTO',
       message: '¿Seguro que desa pedir auto?',
@@ -36,7 +40,33 @@ export class ParkingPage {
         {
           text: 'Aceptar',
           handler: () => {
-            console.log('Aceptado');
+            var tiempo = {
+              hora: 0,
+              minuto: 1,
+              segundo: 60
+          };
+          clearInterval(tiempo_corriendo)
+          tiempo_corriendo = setInterval(function(){
+            // Segundos
+            if(tiempo.segundo > 0){
+                document.addEventListener("backbutton",function(e) {
+              }, false);
+              tiempo.segundo--;
+              if(tiempo.segundo==0){
+                tiempo.segundo=60;
+                if(tiempo.minuto >0){
+                  tiempo.minuto --;
+                }else{
+                  tiempo.segundo=0;
+                  clearInterval(tiempo_corriendo);
+                  document.addEventListener("backbutton",function(e) {
+                    alert("B")
+                  }, true);
+                }
+              }
+            }
+            $(".cronometro .verdana2").html((tiempo.minuto < 10 ? '0' + tiempo.minuto : tiempo.minuto) + ":" + (tiempo.segundo < 10 ? '0' + tiempo.segundo : tiempo.segundo) + " Minutos");
+          }, 1000);
           }
         }
       ]

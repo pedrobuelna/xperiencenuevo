@@ -42,7 +42,9 @@ export class RestaurantPage {
   goToSlide5() {
     this.slides.slideTo(5, 500);
   }
-  
+  onclickListadoroomservice(){
+    this.navCtrl.push("ListadoroomservicePage")
+  }
   slideChanged(){
     let selectedd = this.selected.nativeElement;
     let selectedd2 = this.selected2.nativeElement;

@@ -99,7 +99,7 @@ export class CalendarioPage {
   }
   onclickReservarFecha(){
     //this.viewCtrl.dismiss();
-    this.navCtrl.push("PHabitacionPage")
+    this.navCtrl.setRoot("PHabitacionPage")
     //console.log("valor datepicker1 "+$('#datepicker').val())
     //console.log("valor datepicker2 "+$('#datepicker2').val())
   }

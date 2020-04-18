@@ -22,11 +22,7 @@ export class MenuPage {
 
 ionViewDidLoad() {
     console.log('ionViewDidLoad MenuPage');
-    if(this.dataP.dataX == 0){
-      this.navCtrl.push("LoginPage")
-    }else if(this.dataP.dataX = 2){
-      
-    }
+    console.log(this.dataP.dataX)
   }
   onclickCerrarsesion(){
     this.dataP.dataX = 0;

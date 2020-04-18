@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { DataProvider } from '../../providers/data/data'
 /**
  * Generated class for the ContactoPage page.
  *
@@ -15,7 +15,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ContactoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+    public dataP: DataProvider) {
   }
 
   ionViewDidLoad() {
@@ -63,6 +64,9 @@ export class ContactoPage {
     this.navCtrl.push("HabitacionPage")
   }
   onclickMenu(){
+    this.navCtrl.push("MenuPage")
+  }
+  onclickMenu2(){
     this.navCtrl.push("MenuprincipalPage")
   }
   onclickActividades(){
@@ -79,5 +83,8 @@ export class ContactoPage {
   }
   onclickChat(){
     this.navCtrl.push("ChatPage")
+  }
+  onclickPerfil(){
+    this.navCtrl.push("EditarinfopersonalPage")
   }
 }

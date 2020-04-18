@@ -22,13 +22,6 @@ export class MenuprincipalPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MenuprincipalPage');
-    
-    console.log('ionViewDidLoad LoginPage');
-    if(this.dataP.dataX == 0){
-      this.navCtrl.push("LoginPage")
-    }else if(this.dataP.dataX = 1){
-      
-    }
   }
   onclickHabitacion(){
     this.navCtrl.push("HabitacionPage")

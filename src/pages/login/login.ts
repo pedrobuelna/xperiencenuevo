@@ -35,24 +35,32 @@ export class LoginPage{
   public login: number = this.dataP.dataX;
   ionViewDidLoad() {
     console.log('ionViewDidLoad LoginPage');
-    if(this.dataP.dataX == 0){
-      
-    }else if(this.dataP.dataX != 0){
-      this.navCtrl.setRoot("EditarinfopersonalPage")
+  }
+  ionViewCanEnter(){
+    console.log('ionViewCanEnter LoginPage');
+    if(this.dataP.dataX == 1){
+      this.navCtrl.setRoot("MenuPage");
+    }else if(this.dataP.dataX == 2){
+      this.navCtrl.setRoot("MenuprincipalPage")
     }
   }
   onclickMenu(){
     if(this.correoVal == "prueba1@gmail.com"){
       this.login = this.dataP.dataX = 1;
       //this.navCtrl.push("MenuprincipalPage")
-      this.navCtrl.setRoot("MenuprincipalPage");
+      this.navCtrl.setRoot("MenuPage");
     }else if(this.correoVal == "prueba2@gmail.com"){
       this.login = this.dataP.dataX = 2;
-      this.navCtrl.push("MenuPage")
+      this.navCtrl.setRoot("MenuprincipalPage")
     }else{
       this.navCtrl.push("LoginPage")
     }
-    
+  }
+  onclickActividades(){
+    this.navCtrl.push("ActividadesPage")
+  }
+  onclickContacto(){
+    this.navCtrl.push("ContactoPage")
   }
   onclickRegistro(){
     this.navCtrl.push("RegistroPage")

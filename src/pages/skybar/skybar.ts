@@ -23,6 +23,9 @@ export class SkybarPage {
   @ViewChild('selected5') selected5: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+  onclickListadoroomservice(){
+    this.navCtrl.push("ListadoroomservicePage")
+  }
   goToSlide1() {
     this.slides.slideTo(1, 500);
   }

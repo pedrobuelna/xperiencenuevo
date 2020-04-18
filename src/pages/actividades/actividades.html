@@ -104,7 +104,7 @@
                 <button ion-button color="light" clear (click)="onclickMenu()">MENU</button>
               </div>
               <div>
-                <button ion-button color="light" clear>ROOM SERVICE</button>
+                <button ion-button color="light" clear (click)="onclickListadoroomservice()">ROOM SERVICE</button>
               </div>
               <div>
                 <button ion-button color="light" clear>RESERVACIONES</button>
@@ -137,7 +137,7 @@
                 <button ion-button color="light" clear>MENÚ</button>
               </div>
               <div>
-                <button ion-button color="light" clear>ROOM SERVICE</button>
+                <button ion-button color="light" clear (click)="onclickListadoroomservice()">ROOM SERVICE</button>
               </div>
               <div>
                 <button ion-button color="light" clear>RESERVACIONES</button>
@@ -187,11 +187,11 @@
   <div ion-fixed class="content_menu logueado">
     <ul>
       <li>
-        <img src="../../assets/imgs/actividades_menu2.png" alt="actividades" (click)="onclickActividades()">
+        <img src="../../assets/imgs/actividades_menu2.png" alt="actividades">
         <a class="menu1">ACTIVIDADES</a>
       </li>
       <li>
-        <img src="../../assets/imgs/contacto_menu2.png" alt="contacto" (click)="onclickContact()">
+        <img src="../../assets/imgs/contacto_menu2.png" alt="contacto" (click)="onclickContacto()">
         <a class="menu1">CONTACTO</a>
       </li>
       <li>

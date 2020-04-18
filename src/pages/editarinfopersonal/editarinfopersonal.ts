@@ -30,7 +30,6 @@ export class EditarinfopersonalPage {
   public correoElectronico: string = 'barbiellah@icloud.com';
   public numerosTelefonoVal: string = '+52 1068 6766';
   constructor(public navCtrl: NavController, public navParams: NavParams,public formbuilder:FormBuilder) {
-
     this.formgroup = formbuilder.group({
       name:['',[Validators.required,Validators.minLength(5)]],
       apellidos:['',[Validators.required,Validators.minLength(5)]],
@@ -50,5 +49,7 @@ export class EditarinfopersonalPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EditarinfopersonalPage');
   }
-
+  onclickMenu(){
+    this.navCtrl.push("MenuPage")
+  }
 }

@@ -44,6 +44,15 @@ export class ActividadesPage {
     //this.navCtrl.setRoot("HabitacionPage",null,{direction:"forward",animate:true})
     this.navCtrl.push("HabitacionPage")
   }
+  onclickContacto(){
+    this.navCtrl.push("ContactoPage")
+  }
+  onclickLlaves(){
+    this.navCtrl.push("LlavesPage")
+  }
+  onclickPerfil(){
+    this.navCtrl.push("EditarinfopersonalPage")
+  }
   onclickRestaurant(){
     //this.navCtrl.setRoot("RestaurantPage",null,{direction:"forward",animate:true})
     this.navCtrl.push("RestaurantPage")
@@ -51,6 +60,12 @@ export class ActividadesPage {
   onclickSkybar(){
     //this.navCtrl.setRoot("SkybarPage",null,{direction:"forward",animate:true})
     this.navCtrl.push("SkybarPage")
+  }
+  onclickParking(){
+    this.navCtrl.push("ParkingPage")
+  }
+  onclickListadoroomservice(){
+    this.navCtrl.push("ListadoroomservicePage")
   }
   onclickCafe(){
     //this.navCtrl.setRoot("CafePage",null,{direction:"forward",animate:true})
